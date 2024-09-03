@@ -1,0 +1,13 @@
+doctype html
+block vars
+
+html(lang="ja", dir="ltr")
+  head
+    include common/_head
+
+  body(class=key)
+    block contents
+
+    script(src=jsPath+"/script.js")
+
+    block script
