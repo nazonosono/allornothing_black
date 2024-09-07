@@ -7,3 +7,21 @@ block vars
 
 block contents
   include component/_title
+  div(id = "content")
+    p(id = "create_mission") 文字をタップして入力してください
+  div(id = "missionCard")
+    div(id = "missionNo") 2
+    div(id = "missioncontent") ミッション内容
+  div(id = "error-message")
+  div(id = "input-text")
+  button(onclick = "deleteChar()") 取消
+
+  include component/_gozyuonhyo
+
+  button(onclick = "") 仮作成文章へ
+  button(onclick = "") 文章仮作成
+
+  // モーダルウィンドウ用
+  button(id = "back", onclick="") 戻る
+
+  include mixin/_footerBtn

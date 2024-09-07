@@ -1,0 +1,9 @@
+- var list = ['あ','い','う','え','お','か','き','く','け','こ','さ','し','す','せ','そ','た','ち','つ','て','と','な','に','ぬ','ね','の','は','ひ','ふ','へ','ほ','ま','み','む','め','も','や','ゆ','よ','ら','り','る','れ','ろ','わ','を','ん']
+// 五十音表作成
+each item ,index in list
+  - var charNum = index + 1
+  - var hira_Num = "hira-" + charNum + "-count"
+    // 文字カード作成
+    div(id = "charCard")
+      div(id = hira_Num)
+      button(id = hira_Num, onclick="typeChar('" + hira_Num + "')") #{item}
