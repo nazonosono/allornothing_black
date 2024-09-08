@@ -6,22 +6,28 @@ block vars
   - var page = pages[key]
 
 block contents
-  include component/_title
   div(id = "content")
     p(id = "create_mission") 文字をタップして入力してください
-  div(id = "missionCard")
-    div(id = "missionNo") 1
-    div(id = "missioncontent") ミッション内容
+  div(class = "missionCard")
+    div(class = "missionNo") 1
+    div(class = "missioncontent") ミッション内容
   div(id = "error-message")
   div(id = "input-text")
   button(onclick = "deleteChar()") 取消
 
   include component/_gozyuonhyo
 
-  button(onclick = "") 仮作成文章へ
+  button(onclick = "") クリア済一覧
   button(onclick = "") 文章仮作成
 
-  // モーダルウィンドウ用
-  button(id = "back", onclick="") 戻る
+  // モーダルウィンドウ
+  include component/_mask
+  include component/_modalwindow
+
+  // クリア済単語一覧
+  div(id = "cleared_content")
+    p(id = "cleared_words_title") クリア済単語一覧
+    div(class = "content_box")
+      p 単語
 
   include mixin/_footerBtn
