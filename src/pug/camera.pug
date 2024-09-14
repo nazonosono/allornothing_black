@@ -1,0 +1,11 @@
+extends _layout
+
+block vars
+  include _config
+  - var key = "camera"
+  - var page = pages[key]
+
+block contents
+  include component/_title
+  button(id = "back", onclick="") 戻る
+  include mixin/_footerBtn

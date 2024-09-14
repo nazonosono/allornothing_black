@@ -1,0 +1,33 @@
+extends _layout
+
+block vars
+  include _config
+  - var key = "create_mission_3"
+  - var page = pages[key]
+
+block contents
+  div(id = "content")
+    p(id = "create_mission") 文字をタップして入力してください
+  div(class = "missionCard")
+    div(class = "missionNo") 3
+    div(class = "missioncontent") ミッション内容
+  div(id = "error-message")
+  div(id = "input-text")
+  button(onclick = "deleteChar()") 取消
+
+  include component/_gozyuonhyo
+
+  button(onclick = "") クリア済一覧
+  button(onclick = "") 文章仮作成
+
+  // モーダルウィンドウ
+  include component/_mask
+  include component/_modalwindow
+
+  // クリア済単語一覧
+  div(id = "cleared_content")
+    p(id = "cleared_words_title") クリア済単語一覧
+    div(class = "content_box")
+      p 単語
+
+  include mixin/_footerBtn

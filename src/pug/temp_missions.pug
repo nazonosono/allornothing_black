@@ -1,0 +1,21 @@
+extends _layout
+
+block vars
+  include _config
+  - var key = "temp_missions"
+  - var page = pages[key]
+
+block contents
+  include component/_title
+  div(id = "content")
+    p(id = "temp_missions_title") 作成済み文章一覧
+    div(id = "missionCard")
+      div(class = "missionNo") 1
+      div(class = "missioncontent") ミッション内容
+  // 各種処理メニュー
+  include component/_mask
+  button(id = "back", onclick = "") 文章取消
+  button(id = "clear", onclick = "") クリア処理
+  button(id = "back", onclick = "") 戻る
+
+  include mixin/_footerBtn

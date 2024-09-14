@@ -7,6 +7,13 @@ block vars
 
 block contents
   include component/_title
+  div(id = "content")
+    p(id = "index") 現在の文字
+
+  include component/_gozyuonhyo
+
+  button(id = "howtoplay", onclick="") 遊び方
+  include mixin/_footerBtn
 
 block script
   script(src=`${jsPath}/${key}.js`)

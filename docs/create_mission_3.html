@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>トップページ｜All or Nothing BLACK</title>
+    <title>カメラ｜All or Nothing BLACK</title>
     <meta name="description" content="">
     <meta name="format-detection" content="email=no,telephone=no,address=no">
     <meta name="theme-color" content="#000000">
@@ -25,7 +25,7 @@
     <meta name="msapplication-TileImage" content="img/common/logo.png">
     <meta name="msapplication-TileColor" content="#000000">
     <meta property="og:url" content="XXXXX/">
-    <meta property="og:title" content="トップページ｜All or Nothing BLACK">
+    <meta property="og:title" content="カメラ｜All or Nothing BLACK">
     <meta property="og:site_name" content="All or Nothing BLACK">
     <meta property="og:description" content="">
     <meta property="og:type" content="website">
@@ -36,16 +36,22 @@
     <meta property="og:locale" content="ja_JP">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@nazonosono">
-    <meta name="twitter:title" content="トップページ｜All or Nothing BLACK">
+    <meta name="twitter:title" content="カメラ｜All or Nothing BLACK">
     <meta name="twitter:description" content="">
     <meta name="twitter:image" content="XXXXX/img/common/ogp.jpg">
     <meta name="twitter:image:alt" content="">
   </head>
-  <body class="top">
-    <div class="box box-filled box-lg f-lg">All or Nothing BLACK</div>
+  <body class="create_mission_3">
     <div id="content">
-      <p id="index">現在の文字</p>
+      <p id="create_mission">文字をタップして入力してください</p>
     </div>
+    <div class="missionCard">
+      <div class="missionNo">3</div>
+      <div class="missioncontent">ミッション内容</div>
+    </div>
+    <div id="error-message"></div>
+    <div id="input-text"></div>
+    <button onclick="deleteChar()">取消</button>
     <!-- 五十音表作成-->
     <!-- 文字カード作成-->
     <div class="charCard">
@@ -277,7 +283,25 @@
       <div id="hira-46-count"></div>
       <button id="hira-46-count" onclick="typeChar('hira-46-count')">ん</button>
     </div>
-    <button id="howtoplay" onclick="">遊び方</button>
+    <button onclick="">クリア済一覧</button>
+    <button onclick="">文章仮作成</button>
+    <!-- モーダルウィンドウ-->
+    <div class="mask"></div>
+    <div id="modal">
+      <div id="modal_window">
+        <p id="modal_title">completed!</p>
+        <p id="modal_contents_1">あ</p>
+        <p id="modal_contents_2">を追加しました！</p>
+      </div>
+      <button class="back" onclick="">戻る</button>
+    </div>
+    <!-- クリア済単語一覧-->
+    <div id="cleared_content">
+      <p id="cleared_words_title">クリア済単語一覧</p>
+      <div class="content_box">
+        <p>単語</p>
+      </div>
+    </div>
     <nav id="footer_btn">
       <ul>
         <li><a href="index.html">トップ</a></li>
@@ -288,6 +312,5 @@
       </ul>
     </nav>
     <script src="js/script.js"></script>
-    <script src="js/top.js"></script>
   </body>
 </html>

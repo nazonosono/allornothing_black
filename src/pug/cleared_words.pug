@@ -1,0 +1,13 @@
+extends _layout
+
+block vars
+  include _config
+  - var key = "cleared_words"
+  - var page = pages[key]
+
+block contents
+  include component/_title
+  div(id = "content")
+    p(id = "cleared_words") クリア済単語一覧
+    div(class = "content_box")
+      p
