@@ -53,189 +53,191 @@
     <div id="input-text"></div>
     <button onclick="deleteChar()">取消</button>
     <!-- 五十音表作成-->
-    <!-- 文字カード作成-->
-    <div class="charCard">
-      <button id="hira-1" onclick="typeChar('hira-1')" disabled>あ</button>
+    <div id="charCardList">
+      <!-- あ行-->
+      <ul class="charCardLine" id="あ行">
+        <!-- 文字カード「あ」～「お」-->
+        <li class="charCard">
+          <button id="hira-0" onclick="typeChar('あ')" disabled>あ</button>
+        </li>
+        <li class="charCard">
+          <button id="hira-1" onclick="typeChar('い')" disabled>い</button>
+        </li>
+        <li class="charCard">
+          <button id="hira-2" onclick="typeChar('う')" disabled>う</button>
+        </li>
+        <li class="charCard">
+          <button id="hira-3" onclick="typeChar('え')" disabled>え</button>
+        </li>
+        <li class="charCard">
+          <button id="hira-4" onclick="typeChar('お')" disabled>お</button>
+        </li>
+      </ul>
+      <!-- か行-->
+      <ul class="charCardLine" id="か行">
+        <!-- 文字カード「か」～「こ」-->
+        <li class="charCard">
+          <button id="hira-5" onclick="typeChar('か')" disabled>か</button>
+        </li>
+        <li class="charCard">
+          <button id="hira-6" onclick="typeChar('き')" disabled>き</button>
+        </li>
+        <li class="charCard">
+          <button id="hira-7" onclick="typeChar('く')" disabled>く</button>
+        </li>
+        <li class="charCard">
+          <button id="hira-8" onclick="typeChar('け')" disabled>け</button>
+        </li>
+        <li class="charCard">
+          <button id="hira-9" onclick="typeChar('こ')" disabled>こ</button>
+        </li>
+      </ul>
+      <!-- さ行-->
+      <ul class="charCardLine" id="さ行">
+        <!-- 文字カード「さ」～「そ」-->
+        <li class="charCard">
+          <button id="hira-10" onclick="typeChar('さ')" disabled>さ</button>
+        </li>
+        <li class="charCard">
+          <button id="hira-11" onclick="typeChar('し')" disabled>し</button>
+        </li>
+        <li class="charCard">
+          <button id="hira-12" onclick="typeChar('す')" disabled>す</button>
+        </li>
+        <li class="charCard">
+          <button id="hira-13" onclick="typeChar('せ')" disabled>せ</button>
+        </li>
+        <li class="charCard">
+          <button id="hira-14" onclick="typeChar('そ')" disabled>そ</button>
+        </li>
+      </ul>
+      <!-- た行-->
+      <ul class="charCardLine" id="た行">
+        <!-- 文字カード「た」～「と」-->
+        <li class="charCard">
+          <button id="hira-15" onclick="typeChar('た')" disabled>た</button>
+        </li>
+        <li class="charCard">
+          <button id="hira-16" onclick="typeChar('ち')" disabled>ち</button>
+        </li>
+        <li class="charCard">
+          <button id="hira-17" onclick="typeChar('つ')" disabled>つ</button>
+        </li>
+        <li class="charCard">
+          <button id="hira-18" onclick="typeChar('て')" disabled>て</button>
+        </li>
+        <li class="charCard">
+          <button id="hira-19" onclick="typeChar('と')" disabled>と</button>
+        </li>
+      </ul>
+      <!-- な行-->
+      <ul class="charCardLine" id="な行">
+        <!-- 文字カード「な」～「の」-->
+        <li class="charCard">
+          <button id="hira-20" onclick="typeChar('な')" disabled>な</button>
+        </li>
+        <li class="charCard">
+          <button id="hira-21" onclick="typeChar('に')" disabled>に</button>
+        </li>
+        <li class="charCard">
+          <button id="hira-22" onclick="typeChar('ぬ')" disabled>ぬ</button>
+        </li>
+        <li class="charCard">
+          <button id="hira-23" onclick="typeChar('ね')" disabled>ね</button>
+        </li>
+        <li class="charCard">
+          <button id="hira-24" onclick="typeChar('の')" disabled>の</button>
+        </li>
+      </ul>
+      <!-- は行-->
+      <ul class="charCardLine" id="は行">
+        <!-- 文字カード「は」～「ほ」-->
+        <li class="charCard">
+          <button id="hira-25" onclick="typeChar('は')" disabled>は</button>
+        </li>
+        <li class="charCard">
+          <button id="hira-26" onclick="typeChar('ひ')" disabled>ひ</button>
+        </li>
+        <li class="charCard">
+          <button id="hira-27" onclick="typeChar('ふ')" disabled>ふ</button>
+        </li>
+        <li class="charCard">
+          <button id="hira-28" onclick="typeChar('へ')" disabled>へ</button>
+        </li>
+        <li class="charCard">
+          <button id="hira-29" onclick="typeChar('ほ')" disabled>ほ</button>
+        </li>
+      </ul>
+      <!-- ま行-->
+      <ul class="charCardLine" id="ま行">
+        <!-- 文字カード「ま」～「も」-->
+        <li class="charCard">
+          <button id="hira-30" onclick="typeChar('ま')" disabled>ま</button>
+        </li>
+        <li class="charCard">
+          <button id="hira-31" onclick="typeChar('み')" disabled>み</button>
+        </li>
+        <li class="charCard">
+          <button id="hira-32" onclick="typeChar('む')" disabled>む</button>
+        </li>
+        <li class="charCard">
+          <button id="hira-33" onclick="typeChar('め')" disabled>め</button>
+        </li>
+        <li class="charCard">
+          <button id="hira-34" onclick="typeChar('も')" disabled>も</button>
+        </li>
+      </ul>
+      <!-- や行-->
+      <ul class="charCardLine" id="や行">
+        <!-- 文字カード「や」～「よ」-->
+        <li class="charCard">
+          <button id="hira-35" onclick="typeChar('や')" disabled>や</button>
+        </li>
+        <li class="charCard">
+          <button id="hira-36" onclick="typeChar('ゆ')" disabled>ゆ</button>
+        </li>
+        <li class="charCard">
+          <button id="hira-37" onclick="typeChar('よ')" disabled>よ</button>
+        </li>
+      </ul>
+      <!-- ら行-->
+      <ul class="charCardLine" id="ら行">
+        <!-- 文字カード「ら」～「ろ」-->
+        <li class="charCard">
+          <button id="hira-38" onclick="typeChar('ら')" disabled>ら</button>
+        </li>
+        <li class="charCard">
+          <button id="hira-39" onclick="typeChar('り')" disabled>り</button>
+        </li>
+        <li class="charCard">
+          <button id="hira-40" onclick="typeChar('る')" disabled>る</button>
+        </li>
+        <li class="charCard">
+          <button id="hira-41" onclick="typeChar('れ')" disabled>れ</button>
+        </li>
+        <li class="charCard">
+          <button id="hira-42" onclick="typeChar('ろ')" disabled>ろ</button>
+        </li>
+      </ul>
+      <!-- わ行-->
+      <ul class="charCardLine" id="わ行">
+        <!-- 文字カード「わ」～「ん」-->
+        <li class="charCard">
+          <button id="hira-43" onclick="typeChar('わ')" disabled>わ</button>
+        </li>
+        <li class="charCard">
+          <button id="hira-44" onclick="typeChar('を')" disabled>を</button>
+        </li>
+        <li class="charCard">
+          <button id="hira-45" onclick="typeChar('ん')" disabled>ん</button>
+        </li>
+      </ul>
     </div>
-    <!-- 文字カード作成-->
-    <div class="charCard">
-      <button id="hira-2" onclick="typeChar('hira-2')" disabled>い</button>
-    </div>
-    <!-- 文字カード作成-->
-    <div class="charCard">
-      <button id="hira-3" onclick="typeChar('hira-3')" disabled>う</button>
-    </div>
-    <!-- 文字カード作成-->
-    <div class="charCard">
-      <button id="hira-4" onclick="typeChar('hira-4')" disabled>え</button>
-    </div>
-    <!-- 文字カード作成-->
-    <div class="charCard">
-      <button id="hira-5" onclick="typeChar('hira-5')" disabled>お</button>
-    </div>
-    <!-- 文字カード作成-->
-    <div class="charCard">
-      <button id="hira-6" onclick="typeChar('hira-6')" disabled>か</button>
-    </div>
-    <!-- 文字カード作成-->
-    <div class="charCard">
-      <button id="hira-7" onclick="typeChar('hira-7')" disabled>き</button>
-    </div>
-    <!-- 文字カード作成-->
-    <div class="charCard">
-      <button id="hira-8" onclick="typeChar('hira-8')" disabled>く</button>
-    </div>
-    <!-- 文字カード作成-->
-    <div class="charCard">
-      <button id="hira-9" onclick="typeChar('hira-9')" disabled>け</button>
-    </div>
-    <!-- 文字カード作成-->
-    <div class="charCard">
-      <button id="hira-10" onclick="typeChar('hira-10')" disabled>こ</button>
-    </div>
-    <!-- 文字カード作成-->
-    <div class="charCard">
-      <button id="hira-11" onclick="typeChar('hira-11')" disabled>さ</button>
-    </div>
-    <!-- 文字カード作成-->
-    <div class="charCard">
-      <button id="hira-12" onclick="typeChar('hira-12')" disabled>し</button>
-    </div>
-    <!-- 文字カード作成-->
-    <div class="charCard">
-      <button id="hira-13" onclick="typeChar('hira-13')" disabled>す</button>
-    </div>
-    <!-- 文字カード作成-->
-    <div class="charCard">
-      <button id="hira-14" onclick="typeChar('hira-14')" disabled>せ</button>
-    </div>
-    <!-- 文字カード作成-->
-    <div class="charCard">
-      <button id="hira-15" onclick="typeChar('hira-15')" disabled>そ</button>
-    </div>
-    <!-- 文字カード作成-->
-    <div class="charCard">
-      <button id="hira-16" onclick="typeChar('hira-16')" disabled>た</button>
-    </div>
-    <!-- 文字カード作成-->
-    <div class="charCard">
-      <button id="hira-17" onclick="typeChar('hira-17')" disabled>ち</button>
-    </div>
-    <!-- 文字カード作成-->
-    <div class="charCard">
-      <button id="hira-18" onclick="typeChar('hira-18')" disabled>つ</button>
-    </div>
-    <!-- 文字カード作成-->
-    <div class="charCard">
-      <button id="hira-19" onclick="typeChar('hira-19')" disabled>て</button>
-    </div>
-    <!-- 文字カード作成-->
-    <div class="charCard">
-      <button id="hira-20" onclick="typeChar('hira-20')" disabled>と</button>
-    </div>
-    <!-- 文字カード作成-->
-    <div class="charCard">
-      <button id="hira-21" onclick="typeChar('hira-21')" disabled>な</button>
-    </div>
-    <!-- 文字カード作成-->
-    <div class="charCard">
-      <button id="hira-22" onclick="typeChar('hira-22')" disabled>に</button>
-    </div>
-    <!-- 文字カード作成-->
-    <div class="charCard">
-      <button id="hira-23" onclick="typeChar('hira-23')" disabled>ぬ</button>
-    </div>
-    <!-- 文字カード作成-->
-    <div class="charCard">
-      <button id="hira-24" onclick="typeChar('hira-24')" disabled>ね</button>
-    </div>
-    <!-- 文字カード作成-->
-    <div class="charCard">
-      <button id="hira-25" onclick="typeChar('hira-25')" disabled>の</button>
-    </div>
-    <!-- 文字カード作成-->
-    <div class="charCard">
-      <button id="hira-26" onclick="typeChar('hira-26')" disabled>は</button>
-    </div>
-    <!-- 文字カード作成-->
-    <div class="charCard">
-      <button id="hira-27" onclick="typeChar('hira-27')" disabled>ひ</button>
-    </div>
-    <!-- 文字カード作成-->
-    <div class="charCard">
-      <button id="hira-28" onclick="typeChar('hira-28')" disabled>ふ</button>
-    </div>
-    <!-- 文字カード作成-->
-    <div class="charCard">
-      <button id="hira-29" onclick="typeChar('hira-29')" disabled>へ</button>
-    </div>
-    <!-- 文字カード作成-->
-    <div class="charCard">
-      <button id="hira-30" onclick="typeChar('hira-30')" disabled>ほ</button>
-    </div>
-    <!-- 文字カード作成-->
-    <div class="charCard">
-      <button id="hira-31" onclick="typeChar('hira-31')" disabled>ま</button>
-    </div>
-    <!-- 文字カード作成-->
-    <div class="charCard">
-      <button id="hira-32" onclick="typeChar('hira-32')" disabled>み</button>
-    </div>
-    <!-- 文字カード作成-->
-    <div class="charCard">
-      <button id="hira-33" onclick="typeChar('hira-33')" disabled>む</button>
-    </div>
-    <!-- 文字カード作成-->
-    <div class="charCard">
-      <button id="hira-34" onclick="typeChar('hira-34')" disabled>め</button>
-    </div>
-    <!-- 文字カード作成-->
-    <div class="charCard">
-      <button id="hira-35" onclick="typeChar('hira-35')" disabled>も</button>
-    </div>
-    <!-- 文字カード作成-->
-    <div class="charCard">
-      <button id="hira-36" onclick="typeChar('hira-36')" disabled>や</button>
-    </div>
-    <!-- 文字カード作成-->
-    <div class="charCard">
-      <button id="hira-37" onclick="typeChar('hira-37')" disabled>ゆ</button>
-    </div>
-    <!-- 文字カード作成-->
-    <div class="charCard">
-      <button id="hira-38" onclick="typeChar('hira-38')" disabled>よ</button>
-    </div>
-    <!-- 文字カード作成-->
-    <div class="charCard">
-      <button id="hira-39" onclick="typeChar('hira-39')" disabled>ら</button>
-    </div>
-    <!-- 文字カード作成-->
-    <div class="charCard">
-      <button id="hira-40" onclick="typeChar('hira-40')" disabled>り</button>
-    </div>
-    <!-- 文字カード作成-->
-    <div class="charCard">
-      <button id="hira-41" onclick="typeChar('hira-41')" disabled>る</button>
-    </div>
-    <!-- 文字カード作成-->
-    <div class="charCard">
-      <button id="hira-42" onclick="typeChar('hira-42')" disabled>れ</button>
-    </div>
-    <!-- 文字カード作成-->
-    <div class="charCard">
-      <button id="hira-43" onclick="typeChar('hira-43')" disabled>ろ</button>
-    </div>
-    <!-- 文字カード作成-->
-    <div class="charCard">
-      <button id="hira-44" onclick="typeChar('hira-44')" disabled>わ</button>
-    </div>
-    <!-- 文字カード作成-->
-    <div class="charCard">
-      <button id="hira-45" onclick="typeChar('hira-45')" disabled>を</button>
-    </div>
-    <!-- 文字カード作成-->
-    <div class="charCard">
-      <button id="hira-46" onclick="typeChar('hira-46')" disabled>ん</button>
+    <div class="option-button">
+      <button id="prolonged-mark" onclick="typeChar('ー')">ー</button>
+      <button id="voiced-mark" onclick="addVoicedMark()">゛</button>
+      <button id="semi-voiced-mark" onclick="addSemiVoicedMark()">゜</button>
+      <button id="to-small-hiragana" onclick="toSmallHiragana()">小文字</button>
     </div>
     <button onclick="">クリア済一覧</button>
     <button onclick="">文章仮作成</button>
