@@ -43,6 +43,10 @@
   </head>
   <body class="camera">
     <div class="box box-filled box-lg f-lg">All or Nothing BLACK</div>
+    <main>
+      <div id="loadingMessage">🎥 カメラにアクセスできません。カメラの使用を許可してください。</div>
+      <canvas id="canvas" hidden></canvas>
+    </main>
     <button id="back" onclick="">戻る</button>
     <nav id="footer_btn">
       <ul>
@@ -53,6 +57,16 @@
         <li id="menu">メニュー</li>
       </ul>
     </nav>
+    <div id="modal" hidden>
+      <div id="modal_window">
+        <p id="modal_title">completed!</p>
+        <p id="modal_contents_1"></p>
+        <p id="modal_contents_2">を追加しました！</p>
+      </div>
+      <button class="back" onclick="closeModal()">戻る</button>
+    </div>
     <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jsqr@1.4.0/dist/jsQR.min.js"></script>
+    <script src="js/camera.js"></script>
   </body>
 </html>

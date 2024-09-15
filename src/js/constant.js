@@ -16,4 +16,6 @@ const CLASS = {
 const ID = {
   HIRAGANA_CARD_PREFIX: 'hira-',
   getCardId: (hiraId) => ID.HIRAGANA_CARD_PREFIX + hiraId,
+  MODAL: 'modal',
+  MODAL_HIRAGANA: 'modal_contents_1',
 };

@@ -7,5 +7,15 @@ block vars
 
 block contents
   include component/_title
+  main
+    div(id="loadingMessage") 🎥 カメラにアクセスできません。カメラの使用を許可してください。
+    canvas(id="canvas" hidden)
+
   button(id = "back", onclick="") 戻る
   include mixin/_footerBtn
+
+  include component/_modalwindow
+
+block script
+  script(src="https://cdn.jsdelivr.net/npm/jsqr@1.4.0/dist/jsQR.min.js")
+  script(src=`${jsPath}/${key}.js`)
