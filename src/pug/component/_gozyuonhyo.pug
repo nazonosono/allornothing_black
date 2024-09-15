@@ -2,8 +2,7 @@
 // 五十音表作成
 each item ,index in list
   - var charNum = index + 1
-  - var hira_Num = "hira-" + charNum + "-count"
+  - var hira_Num = "hira-" + charNum
     // 文字カード作成
     div(class = "charCard")
-      div(id = hira_Num)
-      button(id = hira_Num, onclick="typeChar('" + hira_Num + "')") #{item}
+      button(id = hira_Num, onclick="typeChar('" + hira_Num + "')", disabled) #{item}
