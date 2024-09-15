@@ -14,7 +14,7 @@
 
 /* line 1 : C:\Users\daito\OneDrive\ドキュメント\謎解き\上方謎の園BLACK\オルナシ企画\allornothing_black\src\stylus\setting\_color.styl */
 
-/* line 5 : C:\Users\daito\OneDrive\ドキュメント\謎解き\上方謎の園BLACK\オルナシ企画\allornothing_black\src\stylus\setting\_color.styl */
+/* line 6 : C:\Users\daito\OneDrive\ドキュメント\謎解き\上方謎の園BLACK\オルナシ企画\allornothing_black\src\stylus\setting\_color.styl */
 
 /* line 1 : C:\Users\daito\OneDrive\ドキュメント\謎解き\上方謎の園BLACK\オルナシ企画\allornothing_black\src\stylus\component\_box.styl */
 
@@ -472,11 +472,19 @@ li {
 
 /* line 1 : C:\Users\daito\OneDrive\ドキュメント\謎解き\上方謎の園BLACK\オルナシ企画\allornothing_black\src\stylus\foundation\_base.styl */
 
-/* line 1 : C:\Users\daito\OneDrive\ドキュメント\謎解き\上方謎の園BLACK\オルナシ企画\allornothing_black\src\stylus\foundation\_base.styl */
-
-/* line 1 : C:\Users\daito\OneDrive\ドキュメント\謎解き\上方謎の園BLACK\オルナシ企画\allornothing_black\src\stylus\foundation\_base.styl */
-
 /* line 30 : C:\Users\daito\OneDrive\ドキュメント\謎解き\上方謎の園BLACK\オルナシ企画\allornothing_black\src\stylus\foundation\_base.styl */
+
+/* line 1 : C:\Users\daito\OneDrive\ドキュメント\謎解き\上方謎の園BLACK\オルナシ企画\allornothing_black\src\stylus\common\_mask.styl */
+
+/* line 1 : C:\Users\daito\OneDrive\ドキュメント\謎解き\上方謎の園BLACK\オルナシ企画\allornothing_black\src\stylus\common\_mask.styl */
+.mask {
+  background-color: #231815;
+  opacoty: 90%;
+}
+
+/* line 1 : C:\Users\daito\OneDrive\ドキュメント\謎解き\上方謎の園BLACK\オルナシ企画\allornothing_black\src\stylus\common\_mask.styl */
+
+/* line 3 : C:\Users\daito\OneDrive\ドキュメント\謎解き\上方謎の園BLACK\オルナシ企画\allornothing_black\src\stylus\common\_mask.styl */
 
 /* line 1 : C:\Users\daito\OneDrive\ドキュメント\謎解き\上方謎の園BLACK\オルナシ企画\allornothing_black\src\stylus\common\_gozyuonhyo.styl */
 
@@ -487,8 +495,6 @@ li {
   width: 100%;
   writing-mode: vertical-rl;
   margin-bottom: 3rem;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
 }
 
 /* line 9 : C:\Users\daito\OneDrive\ドキュメント\謎解き\上方謎の園BLACK\オルナシ企画\allornothing_black\src\stylus\common\_gozyuonhyo.styl */
@@ -496,30 +502,42 @@ li {
   display: flex;
   justify-content: space-between;
   padding: 0;
-  margin: 0 auto;
+  margin: 0;
+  width: 10%;
 }
 
-/* line 14 : C:\Users\daito\OneDrive\ドキュメント\謎解き\上方謎の園BLACK\オルナシ企画\allornothing_black\src\stylus\common\_gozyuonhyo.styl */
+/* line 15 : C:\Users\daito\OneDrive\ドキュメント\謎解き\上方謎の園BLACK\オルナシ企画\allornothing_black\src\stylus\common\_gozyuonhyo.styl */
 #charCardList .charCardLine .charCard {
-  margin: 0.8rem 0.5rem;
+  margin: 0.5rem 0.5rem;
+  width: 3rem;
+  height: 3rem;
 }
 
-/* line 16 : C:\Users\daito\OneDrive\ドキュメント\謎解き\上方謎の園BLACK\オルナシ企画\allornothing_black\src\stylus\common\_gozyuonhyo.styl */
+/* line 19 : C:\Users\daito\OneDrive\ドキュメント\謎解き\上方謎の園BLACK\オルナシ企画\allornothing_black\src\stylus\common\_gozyuonhyo.styl */
 #charCardList .charCardLine .charCard button {
   width: 100%;
   height: 100%;
   font-size: 1.8rem;
   font-weight: 800;
+  background-color: #fff;
+  color: #231815;
+  border: 0;
 }
 
-/* line 22 : C:\Users\daito\OneDrive\ドキュメント\謎解き\上方謎の園BLACK\オルナシ企画\allornothing_black\src\stylus\common\_gozyuonhyo.styl */
+/* line 27 : C:\Users\daito\OneDrive\ドキュメント\謎解き\上方謎の園BLACK\オルナシ企画\allornothing_black\src\stylus\common\_gozyuonhyo.styl */
+#charCardList .charCardLine .charCard button:disabled {
+  background-color: #b5b5b6;
+  color: #595757;
+}
+
+/* line 31 : C:\Users\daito\OneDrive\ドキュメント\謎解き\上方謎の園BLACK\オルナシ企画\allornothing_black\src\stylus\common\_gozyuonhyo.styl */
 .option-button {
   display: flex;
   justify-content: space-between;
   padding: 0 1rem 3rem 1rem;
 }
 
-/* line 26 : C:\Users\daito\OneDrive\ドキュメント\謎解き\上方謎の園BLACK\オルナシ企画\allornothing_black\src\stylus\common\_gozyuonhyo.styl */
+/* line 35 : C:\Users\daito\OneDrive\ドキュメント\謎解き\上方謎の園BLACK\オルナシ企画\allornothing_black\src\stylus\common\_gozyuonhyo.styl */
 .option-button button {
   padding: 0.4rem 0;
   border: 0;
@@ -527,6 +545,11 @@ li {
   height: 100%;
   background-color: #2984b2;
   color: #fff;
+}
+
+/* line 42 : C:\Users\daito\OneDrive\ドキュメント\謎解き\上方謎の園BLACK\オルナシ企画\allornothing_black\src\stylus\common\_gozyuonhyo.styl */
+.option-button button:disabled {
+  background-color: #b5b5b6;
 }
 
 /* line 1 : C:\Users\daito\OneDrive\ドキュメント\謎解き\上方謎の園BLACK\オルナシ企画\allornothing_black\src\stylus\common\_gozyuonhyo.styl */
