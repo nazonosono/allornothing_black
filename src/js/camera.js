@@ -30,7 +30,7 @@ function tick() {
     });
 
     // コード検出時
-    if (code) {
+    if (code && code.data) {
       // 枠を付ける
       const borderColor = "#FF3B58";
       drawLine(code.location.topLeftCorner, code.location.topRightCorner, borderColor);
@@ -46,10 +46,10 @@ function tick() {
         modalHiraElm.textContent = hira
         const modalElm = document.getElementById(ID.MODAL);
         modalElm.hidden = false;
-      }
 
-      // 検出された文字をアンロック済みとしてDBに追加
-      addToUnlocked(hiraIdx);
+        // 検出された文字をアンロック済みとしてDBに追加
+        addToUnlocked(hiraIdx);
+      }
     }
   }
   requestAnimationFrame(tick);

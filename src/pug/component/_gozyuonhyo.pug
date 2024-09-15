@@ -5,4 +5,7 @@ each item ,index in list
   - var hira_Num = "hira-" + charNum
     // 文字カード作成
     div(class = "charCard")
-      button(id = hira_Num, onclick="typeChar('" + hira_Num + "')", disabled) #{item}
+      if (key === "top")
+        button(id = hira_Num, disabled) #{item}
+      else
+        button(id = hira_Num, onclick="typeChar('" + hira_Num + "')", disabled) #{item}
