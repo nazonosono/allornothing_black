@@ -1,15 +1,110 @@
 - var list = ['あ','い','う','え','お','か','き','く','け','こ','さ','し','す','せ','そ','た','ち','つ','て','と','な','に','ぬ','ね','の','は','ひ','ふ','へ','ほ','ま','み','む','め','も','や','ゆ','よ','ら','り','る','れ','ろ','わ','を','ん']
 // 五十音表作成
-each item ,index in list
-  - var hira_Num = "hira-" + index
-    // 文字カード作成
-    div(class = "charCard")
-      if (key === "top")
-        button(id = hira_Num, disabled) #{item}
-      else
-        button(id = hira_Num, onclick="typeChar('" + item + "')", disabled) #{item}
+div(id = "charCardList")
+  // あ行
+  ul(class = "charCardLine", id = "あ行")
+    // 文字カード「あ」～「お」
+    - for(var count = 0; count < 5; count++)
+      - var hira_Num = "hira-" + count
+      li(class = "charCard")
+        if(key === "top")
+          button(id = hira_Num, disabled) #{list[count]}
+        else
+          button(id = hira_Num, onclick="typeChar('" + list[count] + "')", disabled) #{list[count]}
+  // か行
+  ul(class = "charCardLine", id = "か行")
+    // 文字カード「か」～「こ」
+    - for(var count = 5; count < 10; count++)
+      - var hira_Num = "hira-" + count
+      li(class = "charCard")
+        if(key === "top")
+          button(id = hira_Num, disabled) #{list[count]}
+        else
+          button(id = hira_Num, onclick="typeChar('" + list[count] + "')", disabled) #{list[count]}
+  // さ行
+  ul(class = "charCardLine", id = "さ行")
+    // 文字カード「さ」～「そ」
+    - for(var count = 10; count < 15; count++)
+      - var hira_Num = "hira-" + count
+      li(class = "charCard")
+        if(key === "top")
+          button(id = hira_Num, disabled) #{list[count]}
+        else
+          button(id = hira_Num, onclick="typeChar('" + list[count] + "')", disabled) #{list[count]}
+  // た行
+  ul(class = "charCardLine", id = "た行")
+    // 文字カード「た」～「と」
+    - for(var count = 15; count < 20; count++)
+      - var hira_Num = "hira-" + count
+      li(class = "charCard")
+        if(key === "top")
+          button(id = hira_Num, disabled) #{list[count]}
+        else
+          button(id = hira_Num, onclick="typeChar('" + list[count] + "')", disabled) #{list[count]}
+  // な行
+  ul(class = "charCardLine", id = "な行")
+    // 文字カード「な」～「の」
+    - for(var count = 20; count < 25; count++)
+      - var hira_Num = "hira-" + count
+      li(class = "charCard")
+        if(key === "top")
+          button(id = hira_Num, disabled) #{list[count]}
+        else
+          button(id = hira_Num, onclick="typeChar('" + list[count] + "')", disabled) #{list[count]}
+  // は行
+  ul(class = "charCardLine", id = "は行")
+    // 文字カード「は」～「ほ」
+    - for(var count = 25; count < 30; count++)
+      - var hira_Num = "hira-" + count
+      li(class = "charCard")
+        if(key === "top")
+          button(id = hira_Num, disabled) #{list[count]}
+        else
+          button(id = hira_Num, onclick="typeChar('" + list[count] + "')", disabled) #{list[count]}
+  // ま行
+  ul(class = "charCardLine", id = "ま行")
+    // 文字カード「ま」～「も」
+    - for(var count = 30; count < 35; count++)
+      - var hira_Num = "hira-" + count
+      li(class = "charCard")
+        if(key === "top")
+          button(id = hira_Num, disabled) #{list[count]}
+        else
+          button(id = hira_Num, onclick="typeChar('" + list[count] + "')", disabled) #{list[count]}
+  // や行
+  ul(class = "charCardLine", id = "や行")
+    // 文字カード「や」～「よ」
+    - for(var count = 35; count < 38; count++)
+      - var hira_Num = "hira-" + count
+      li(class = "charCard")
+        if(key === "top")
+          button(id = hira_Num, disabled) #{list[count]}
+        else
+          button(id = hira_Num, onclick="typeChar('" + list[count] + "')", disabled) #{list[count]}
+  // ら行
+  ul(class = "charCardLine", id = "ら行")
+    // 文字カード「ら」～「ろ」
+    - for(var count = 38; count < 43; count++)
+      - var hira_Num = "hira-" + count
+      li(class = "charCard")
+        if(key === "top")
+          button(id = hira_Num, disabled) #{list[count]}
+        else
+          button(id = hira_Num, onclick="typeChar('" + list[count] + "')", disabled) #{list[count]}
+  // わ行
+  ul(class = "charCardLine", id = "わ行")
+    // 文字カード「わ」～「ん」
+    - for(var count = 43; count < 46; count++)
+      - var hira_Num = "hira-" + count
+      li(class = "charCard")
+        if(key === "top")
+          button(id = hira_Num, disabled) #{list[count]}
+        else
+          button(id = hira_Num, onclick="typeChar('" + list[count] + "')", disabled) #{list[count]}
+if(key !== "top")
+  div(class = "option-button")
+    button(id = "prolonged-mark", onclick = "typeChar('ー')") ー
+    button(id = "voiced-mark", onclick = "addVoicedMark()") ゛
+    button(id = "semi-voiced-mark", onclick = "addSemiVoicedMark()") ゜
+    button(id = "to-small-hiragana", onclick = "toSmallHiragana()") 小文字
 
-button(id = "prolonged-mark", onclick="typeChar('ー')") ー
-button(id = "voiced-mark", onclick="addVoicedMark()", disabled) ゛
-button(id = "semi-voiced-mark", onclick="addSemiVoicedMark()", disabled) ゜
-button(id = "to-small-hiragana", onclick="toSmallHiragana()", disabled) 小文字
