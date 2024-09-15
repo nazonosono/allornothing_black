@@ -1,2 +1,2 @@
-initCard();
+function initStorage(){if(!storageUtil.get(STORAGE_KEYS.VISITED)){storageUtil.set(STORAGE_KEYS.VISITED,!0),storageUtil.set(STORAGE_KEYS.UNLOCKED,[]);for(let t=1;t<=MISSION_COUNT;t++)storageUtil.set(STORAGE_KEYS.TEMP_WORD_PREFIX+t,[]),storageUtil.set(STORAGE_KEYS.CLEARED_WORD_PREFIX+t,[])}}initStorage(),initCard();
 //# sourceMappingURL=top.js.map

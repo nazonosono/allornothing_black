@@ -6,19 +6,20 @@ block vars
   - var page = pages[key]
 
 block contents
+  - var missionNo = 2
   div(id = "content")
     p(id = "create_mission") 文字をタップして入力してください
   div(class = "missionCard")
-    div(class = "missionNo") 2
+    div(class = "missionNo") #{missionNo}
     div(class = "missioncontent") ミッション内容
   div(id = "error-message")
   div(id = "input-text")
-  button(onclick = "deleteChar()") 取消
+  button(id = "delete-char", onclick = "deleteChar()" disabled) 取消
 
   include component/_gozyuonhyo
 
   button(onclick = "") クリア済一覧
-  button(onclick = "") 文章仮作成
+  button(onclick = `createMission(${missionNo})`) 文章仮作成
 
   // モーダルウィンドウ
   include component/_mask

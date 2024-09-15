@@ -13,6 +13,20 @@ const storageUtil = {
   },
 
   /**
+   * LocalStorageの配列データに要素を追加する（重複なし）
+   * @param {string} key
+   * @param {any} value - JSONに変換可能な型
+   */
+  add(key, value) {
+    const array = storageUtil.get(key);
+    if (array.includes(value)) {
+      return;
+    }
+    array.push(value);
+    storageUtil.set(key, array);
+  },
+
+  /**
    * LocalStorageからデータを取得する
    * @param {string} key
    * @returns {any} - 変換後の型

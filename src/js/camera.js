@@ -44,11 +44,10 @@ function tick() {
       if (hira) {
         const modalHiraElm = document.getElementById(ID.MODAL_HIRAGANA);
         modalHiraElm.textContent = hira
-        const modalElm = document.getElementById(ID.MODAL);
-        modalElm.hidden = false;
+        showModal();
 
         // 検出された文字をアンロック済みとしてストレージに保存
-        addToUnlocked(hiraIdx);
+        storageUtil.add(STORAGE_KEYS.UNLOCKED, hiraIdx);
       }
     }
   }

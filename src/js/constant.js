@@ -1,5 +1,34 @@
+const MISSION_COUNT = 3;
+
 const STORAGE_KEYS = {
+  VISITED: 'visited',
   UNLOCKED: 'unlocked',
+  TEMP_WORD_PREFIX: 'temp-',
+  getTempWordKey: (missionId) => STORAGE_KEYS.TEMP_WORD_PREFIX + missionId,
+  CLEARED_WORD_PREFIX: 'cleared-',
+  getClearedWordKey: (missionId) => STORAGE_KEYS.CLEARED_WORD_PREFIX + missionId,
+};
+
+const ID = {
+  // 五十音
+  HIRAGANA_CARD_PREFIX: 'hira-',
+  getCardId: (hiraIdx) => ID.HIRAGANA_CARD_PREFIX + hiraIdx,
+
+  // モーダル
+  MODAL: 'modal',
+  MODAL_HIRAGANA: 'modal_contents_1',
+  MASK: 'mask',
+
+  // ミッション作成画面
+  INPUT_TEXT: 'input-text',
+  ERROR_MESSAGE: 'error-message',
+  VOICED_MARK: 'voiced-mark',
+  SEMI_VOICED_MARK: 'semi-voiced-mark',
+  TO_SMALL: 'to-small-hiragana',
+  DELETE_CHAR: 'delete-char',
+};
+
+const CLASS = {
 };
 
 const HIRAGANA = [
@@ -34,19 +63,3 @@ const HIRAGANA_SMALL_TARGET = [
 const HIRAGANA_SMALL = [
   'ぁ', 'ぃ', 'ぅ', 'ぇ', 'ぉ', 'っ', 'ゃ', 'ゅ', 'ょ',
 ]
-
-const CLASS = {
-};
-
-const ID = {
-  HIRAGANA_CARD_PREFIX: 'hira-',
-  getCardId: (hiraIdx) => ID.HIRAGANA_CARD_PREFIX + hiraIdx,
-  MODAL: 'modal',
-  MODAL_HIRAGANA: 'modal_contents_1',
-  INPUT_TEXT: 'input-text',
-  ERROR_MESSAGE: 'error-message',
-  VOICED_MARK: 'voiced-mark',
-  SEMI_VOICED_MARK: 'semi-voiced-mark',
-  TO_SMALL: 'to-small-hiragana',
-  DELETE_CHAR: 'delete-char',
-};
