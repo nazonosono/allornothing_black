@@ -1,2 +1,2 @@
-init((()=>{const t=storageUtil.get(STORAGE_KEYS.UNLOCKED);if(t)for(const e of t){document.getElementById(ID.getCardId(e+1)).disabled=!1}else storageUtil.set(STORAGE_KEYS.UNLOCKED,[])}));
+const unlockedArray=storageUtil.get(STORAGE_KEYS.UNLOCKED);if(unlockedArray)for(const e of unlockedArray){document.getElementById(ID.getCardId(e+1)).disabled=!1}else storageUtil.set(STORAGE_KEYS.UNLOCKED,[]);
 //# sourceMappingURL=top.js.map

@@ -47,7 +47,7 @@ function tick() {
         const modalElm = document.getElementById(ID.MODAL);
         modalElm.hidden = false;
 
-        // 検出された文字をアンロック済みとしてDBに追加
+        // 検出された文字をアンロック済みとしてストレージに保存
         addToUnlocked(hiraIdx);
       }
     }
