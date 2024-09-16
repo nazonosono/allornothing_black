@@ -2,31 +2,32 @@
 // @prepros-prepend util.js
 
 /**
- * DOM読み込み後の処理を登録
- * @param {function(Document, Event): any} callback
- * @returns {void}
+ * カード初期処理
  */
-function init(callback) {
-  document.addEventListener('DOMContentLoaded', callback);
+function initCard() {
+  // ストレージからアンロック済みの文字を取得
+  const unlockedArray = storageUtil.get(STORAGE_KEYS.UNLOCKED);
+  if (unlockedArray) {
+    // アンロック済みの文字カードを活性にする
+    for (const hiraIdx of unlockedArray) {
+      const cardElm = document.getElementById(ID.getCardId(hiraIdx));
+      cardElm.disabled = false;
+    }
+  }
+}
+
+/**
+ * モーダルを表示する
+ */
+function showModal() {
+  document.getElementById(ID.MODAL).hidden = false;
+  document.getElementById(ID.MASK).hidden = false;
 }
 
 /**
  * モーダルを閉じる
  */
 function closeModal() {
-  const modalElm = document.getElementById(ID.MODAL);
-  modalElm.hidden = true;
-}
-
-/**
- * アンロック済みの文字を追加する
- * @param {number} hiraIdx
- */
-function addToUnlocked(hiraIdx) {
-  const unlockedArray = storageUtil.get(STORAGE_KEYS.UNLOCKED);
-  if (unlockedArray.includes(hiraIdx)) {
-    return;
-  }
-  unlockedArray.push(hiraIdx);
-  storageUtil.set(STORAGE_KEYS.UNLOCKED, unlockedArray);
+  document.getElementById(ID.MODAL).hidden = true;
+  document.getElementById(ID.MASK).hidden = true;
 }

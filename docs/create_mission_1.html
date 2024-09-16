@@ -51,7 +51,7 @@
     </div>
     <div id="error-message"></div>
     <div id="input-text"></div>
-    <button onclick="deleteChar()">取消</button>
+    <button id="delete-char" onclick="deleteChar()" disabled>取消</button>
     <!-- 五十音表作成-->
     <div id="charCardList">
       <!-- あ行-->
@@ -240,9 +240,9 @@
       <button id="to-small-hiragana" onclick="toSmallHiragana()" disabled>小文字</button>
     </div>
     <button onclick="">クリア済一覧</button>
-    <button onclick="">文章仮作成</button>
+    <button onclick="createMission(1)">文章仮作成</button>
     <!-- モーダルウィンドウ-->
-    <div class="mask"></div>
+    <div id="mask" hidden></div>
     <div id="modal" hidden>
       <div id="modal_window">
         <p id="modal_title">completed!</p>
@@ -268,5 +268,6 @@
       </ul>
     </nav>
     <script src="js/script.js"></script>
+    <script src="js/create_mission.js"></script>
   </body>
 </html>
