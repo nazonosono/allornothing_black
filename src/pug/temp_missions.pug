@@ -19,8 +19,9 @@ block contents
       div(class = "mission_content") ミッション内容
   // 各種処理メニュー
   include component/_mask
-  button(id = "remove", onclick = "") 文章取消
-  button(id = "clear", onclick = "") クリア処理
+  div(id = "button_zone")
+    button(id = "remove", onclick = "") 文章取消
+    button(id = "clear", onclick = "") クリア処理
   button(id = "back", onclick = "") 戻る
 
   include component/_footerBtn
