@@ -20,8 +20,8 @@ block contents
   // 各種処理メニュー
   include component/_mask
   div(id = "button_zone")
-    button(id = "remove", onclick = "") 文章取消
-    button(id = "clear", onclick = "") クリア処理
-  button(id = "back", onclick = "") 戻る
+    button(id = "remove", onclick = "showModal()") 文章取消
+    button(id = "clear", onclick = "showModal()") クリア処理
+  button(id = "back", onclick = "closeModal()") 戻る
 
   include component/_footerBtn
