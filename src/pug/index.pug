@@ -7,13 +7,14 @@ block vars
 
 block contents
   include component/_title
-  div(id = "content")
-    p(id = "index") 現在の文字
+  div(class = "description")
+    p(class = "content") 現在の文字
 
   include component/_gozyuonhyo
 
-  button(id = "howtoplay", onclick="") 遊び方
+  button(id = "howtoplay", onclick="showModal()") 遊び方
   include component/_mask
+
   include component/_footerBtn
 
 block script

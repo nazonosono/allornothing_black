@@ -8,10 +8,12 @@ block vars
 block contents
   include component/_title
   main
+    div(class = "description")
+      p(class = "content") カメラ
     div(id="loadingMessage") 🎥 カメラにアクセスできません。カメラの使用を許可してください。
     canvas(id="canvas" hidden)
+    p ※QRコードを読み取ってください。
 
-  button(id = "back", onclick="") 戻る
   include component/_footerBtn
 
   include mixin/_modalwindow

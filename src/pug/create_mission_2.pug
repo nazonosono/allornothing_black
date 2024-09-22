@@ -9,9 +9,9 @@ block contents
   - var missionNo = 2
   div(id = "content")
     p(id = "create_mission") 文字をタップして入力してください
-  div(class = "missionCard")
-    div(class = "missionNo") #{missionNo}
-    div(class = "missioncontent") ミッション内容
+  div(class = "mission_card")
+    li(class = "mission_NO") #{missionNo}
+    li(class = "mission_content") ミッション内容
   div(id = "error-message")
   div(id = "input-text")
   button(id = "delete-char", onclick = "deleteChar()" disabled) 取消

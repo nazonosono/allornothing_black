@@ -7,15 +7,21 @@ block vars
 
 block contents
   include component/_title
-  div(id = "content")
-    p(id = "select_mission") 問題番号をタップしてください
+  div(class = "description")
+    p(class = "content") 問題番号をタップしてください
   // ミッション一覧
   div(id = "mission")
-    a(href = "create_mission_1.html")
-      li 同じ■■を持っている人
-    a(href = "create_mission_2.html")
-      li 同じ■■を持っている人
-    a(href = "create_mission_3.html")
-      li 同じ■■を持っている人
+    div(class = "mission_card")
+      a(href = "create_mission_1.html")
+        li(class = "mission_NO") 1
+        li(class = "mission_content") 同じ■■を持っている人
+    div(class = "mission_card")
+      a(href = "create_mission_2.html")
+        li(class = "mission_NO") 2
+        li(class = "mission_content") 同じ■■を持っている人
+    div(class = "mission_card")
+      a(href = "create_mission_3.html")
+        li(class = "mission_NO") 3
+        li(class = "mission_content") 同じ■■を持っている人
 
   include component/_footerBtn
