@@ -10,12 +10,16 @@ block contents
   div(class = "description")
     p(class = "content") 仮作成文章一覧
   div(id = "created_content_list")
-    div(id = "missionCard")
-      div(class = "missionNo") 1
-      div(class = "missioncontent") ミッション内容
+    // ローカルストレージから仮作成文章情報を取得し、ループでmisson_cardを作成？
+    div(class = "mission_card", onclick = "showModal()")
+      div(class = "mission_NO") 1
+      div(class = "mission_content") ミッション内容
+    div(class = "mission_card", onclick = "showModal()")
+      div(class = "mission_NO") 1
+      div(class = "mission_content") ミッション内容
   // 各種処理メニュー
   include component/_mask
-  button(id = "back", onclick = "") 文章取消
+  button(id = "remove", onclick = "") 文章取消
   button(id = "clear", onclick = "") クリア処理
   button(id = "back", onclick = "") 戻る
 
