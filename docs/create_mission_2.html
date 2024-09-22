@@ -42,15 +42,16 @@
     <meta name="twitter:image:alt" content="">
   </head>
   <body class="create_mission_2">
+    <div class="box box-filled box-lg f-lg">All or Nothing BLACK</div>
     <div id="content">
-      <p id="create_mission">文字をタップして入力してください</p>
+      <p id="create_mission">文字をタップして入力（最大30文字）</p>
     </div>
     <div class="mission_card">
       <li class="mission_NO">2</li>
       <li class="mission_content">ミッション内容</li>
     </div>
-    <div id="error-message"></div>
-    <div id="input-text"></div>
+    <div id="error-message">テスト</div>
+    <div id="input-text">あいうえおかきくけこさしすせそたちつてとなにぬねのはひふへほ</div>
     <button id="delete-char" onclick="deleteChar()" disabled>取消</button>
     <!-- 五十音表作成-->
     <div id="charCardList">
@@ -239,8 +240,10 @@
       <button id="semi-voiced-mark" onclick="addSemiVoicedMark()" disabled>゜</button>
       <button id="to-small-hiragana" onclick="toSmallHiragana()" disabled>小文字</button>
     </div>
-    <button onclick="">クリア済一覧</button>
-    <button onclick="createMission(2)">文章仮作成</button>
+    <div id="button_zone">
+      <button id="cleared_list" onclick="">クリア済一覧</button>
+      <button id="make_contents" onclick="createMission(2)">文章仮作成</button>
+    </div>
     <!-- モーダルウィンドウ-->
     <div id="mask" hidden></div>
     <div id="modal" hidden>

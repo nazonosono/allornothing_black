@@ -7,19 +7,21 @@ block vars
 
 block contents
   - var missionNo = 1
+  include component/_title
   div(id = "content")
-    p(id = "create_mission") 文字をタップして入力してください
+    p(id = "create_mission") 文字をタップして入力（最大30文字）
   div(class = "mission_card")
     li(class = "mission_NO") #{missionNo}
     li(class = "mission_content") ミッション内容
-  div(id = "error-message")
-  div(id = "input-text")
+  div(id = "error-message") テスト
+  div(id = "input-text") あいうえおかきくけこさしすせそたちつてとなにぬねのはひふへほ
   button(id = "delete-char", onclick = "deleteChar()" disabled) 取消
 
   include component/_gozyuonhyo
 
-  button(onclick = "") クリア済一覧
-  button(onclick = `createMission(${missionNo})`) 文章仮作成
+  div(id = "button_zone")
+    button(id = "cleared_list", onclick = "") クリア済一覧
+    button(id = "make_contents", onclick = `createMission(${missionNo})`) 文章仮作成
 
   // モーダルウィンドウ
   include component/_mask
