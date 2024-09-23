@@ -79,7 +79,7 @@ button {
 .content {
   margin-right: auto;
   margin-left: auto;
-  margin-top: 40%;
+  margin-top: 20%;
   width: 30%;
   padding: 1rem 0;
   background-color: #231815;
@@ -667,8 +667,8 @@ li {
   font-weight: 800;
   font-size: 1.8rem;
   text-align: center;
-  left: 7%;
-  bottom: 70%;
+  left: 10%;
+  bottom: 100%;
 }
 
 /* line 16 : C:\Users\daito\OneDrive\ドキュメント\謎解き\上方謎の園BLACK\オルナシ企画\allornothing_black\src\stylus\common\_mission_card.styl */
@@ -676,15 +676,16 @@ li {
   background-color: #fff;
   color: #231815;
   width: 80%;
+  height: auto;
   margin: 0 auto;
-  padding: 2% 0;
+  padding: 3%;
   font-weight: 800;
   font-size: 1.7rem;
-  text-align: center;
+  text-align: left;
   letter-spacing: 0.05rem;
 }
 
-/* line 25 : C:\Users\daito\OneDrive\ドキュメント\謎解き\上方謎の園BLACK\オルナシ企画\allornothing_black\src\stylus\common\_mission_card.styl */
+/* line 26 : C:\Users\daito\OneDrive\ドキュメント\謎解き\上方謎の園BLACK\オルナシ企画\allornothing_black\src\stylus\common\_mission_card.styl */
 
 /* line 1 : C:\Users\daito\OneDrive\ドキュメント\謎解き\上方謎の園BLACK\オルナシ企画\allornothing_black\src\stylus\common\_title.styl */
 
@@ -705,17 +706,12 @@ li {
   text-align: center;
 }
 
-/* line 3 : C:\Users\daito\OneDrive\ドキュメント\謎解き\上方謎の園BLACK\オルナシ企画\allornothing_black\src\stylus\page\_top.styl */
-.top .description {
-  margin-top: 40%;
-}
-
-/* line 6 : C:\Users\daito\OneDrive\ドキュメント\謎解き\上方謎の園BLACK\オルナシ企画\allornothing_black\src\stylus\page\_top.styl */
+/* line 4 : C:\Users\daito\OneDrive\ドキュメント\謎解き\上方謎の園BLACK\オルナシ企画\allornothing_black\src\stylus\page\_top.styl */
 .top #howtoplay {
   margin-top: 5%;
 }
 
-/* line 7 : C:\Users\daito\OneDrive\ドキュメント\謎解き\上方謎の園BLACK\オルナシ企画\allornothing_black\src\stylus\page\_top.styl */
+/* line 5 : C:\Users\daito\OneDrive\ドキュメント\謎解き\上方謎の園BLACK\オルナシ企画\allornothing_black\src\stylus\page\_top.styl */
 
 /* line 1 : C:\Users\daito\OneDrive\ドキュメント\謎解き\上方謎の園BLACK\オルナシ企画\allornothing_black\src\stylus\page\_camera.styl */
 
@@ -743,9 +739,10 @@ li {
 [class^="create_mission_"] #content {
   text-align: center;
   margin-top: 3rem;
+  margin-bottom: 4rem;
 }
 
-/* line 6 : C:\Users\daito\OneDrive\ドキュメント\謎解き\上方謎の園BLACK\オルナシ企画\allornothing_black\src\stylus\page\_create_mission.styl */
+/* line 7 : C:\Users\daito\OneDrive\ドキュメント\謎解き\上方謎の園BLACK\オルナシ企画\allornothing_black\src\stylus\page\_create_mission.styl */
 [class^="create_mission_"] #error-message {
   color: #e7302a;
   width: 80%;
@@ -757,7 +754,7 @@ li {
   font-weight: bold;
 }
 
-/* line 16 : C:\Users\daito\OneDrive\ドキュメント\謎解き\上方謎の園BLACK\オルナシ企画\allornothing_black\src\stylus\page\_create_mission.styl */
+/* line 17 : C:\Users\daito\OneDrive\ドキュメント\謎解き\上方謎の園BLACK\オルナシ企画\allornothing_black\src\stylus\page\_create_mission.styl */
 [class^="create_mission_"] #input-text {
   background-color: #fff;
   color: #231815;
@@ -768,47 +765,47 @@ li {
   font-weight: bold;
 }
 
-/* line 25 : C:\Users\daito\OneDrive\ドキュメント\謎解き\上方謎の園BLACK\オルナシ企画\allornothing_black\src\stylus\page\_create_mission.styl */
+/* line 26 : C:\Users\daito\OneDrive\ドキュメント\謎解き\上方謎の園BLACK\オルナシ企画\allornothing_black\src\stylus\page\_create_mission.styl */
 [class^="create_mission_"] #delete-char {
   margin: 2rem auto 0 auto;
   display: block;
 }
 
-/* line 29 : C:\Users\daito\OneDrive\ドキュメント\謎解き\上方謎の園BLACK\オルナシ企画\allornothing_black\src\stylus\page\_create_mission.styl */
-
 /* line 30 : C:\Users\daito\OneDrive\ドキュメント\謎解き\上方謎の園BLACK\オルナシ企画\allornothing_black\src\stylus\page\_create_mission.styl */
+
+/* line 31 : C:\Users\daito\OneDrive\ドキュメント\謎解き\上方謎の園BLACK\オルナシ企画\allornothing_black\src\stylus\page\_create_mission.styl */
 [class^="create_mission_"] #button_zone button {
   margin: 2rem;
 }
 
-/* line 32 : C:\Users\daito\OneDrive\ドキュメント\謎解き\上方謎の園BLACK\オルナシ企画\allornothing_black\src\stylus\page\_create_mission.styl */
+/* line 33 : C:\Users\daito\OneDrive\ドキュメント\謎解き\上方謎の園BLACK\オルナシ企画\allornothing_black\src\stylus\page\_create_mission.styl */
 [class^="create_mission_"] #button_zone #cleared_list {
   background-color: #2984b2;
 }
 
-/* line 34 : C:\Users\daito\OneDrive\ドキュメント\謎解き\上方謎の園BLACK\オルナシ企画\allornothing_black\src\stylus\page\_create_mission.styl */
+/* line 35 : C:\Users\daito\OneDrive\ドキュメント\謎解き\上方謎の園BLACK\オルナシ企画\allornothing_black\src\stylus\page\_create_mission.styl */
 [class^="create_mission_"] #button_zone #make_contents {
   background-color: #231815;
 }
 
-/* line 36 : C:\Users\daito\OneDrive\ドキュメント\謎解き\上方謎の園BLACK\オルナシ企画\allornothing_black\src\stylus\page\_create_mission.styl */
+/* line 37 : C:\Users\daito\OneDrive\ドキュメント\謎解き\上方謎の園BLACK\オルナシ企画\allornothing_black\src\stylus\page\_create_mission.styl */
 [class^="create_mission_"] #button_zone #make_contents:disabled {
   background-color: #b5b5b6;
 }
 
-/* line 38 : C:\Users\daito\OneDrive\ドキュメント\謎解き\上方謎の園BLACK\オルナシ企画\allornothing_black\src\stylus\page\_create_mission.styl */
+/* line 39 : C:\Users\daito\OneDrive\ドキュメント\謎解き\上方謎の園BLACK\オルナシ企画\allornothing_black\src\stylus\page\_create_mission.styl */
 [class^="create_mission_"] .mission_card#cleared_words {
   margin: 3rem 0;
   max-height: 55vh;
   overflow-y: auto;
 }
 
-/* line 42 : C:\Users\daito\OneDrive\ドキュメント\謎解き\上方謎の園BLACK\オルナシ企画\allornothing_black\src\stylus\page\_create_mission.styl */
+/* line 43 : C:\Users\daito\OneDrive\ドキュメント\謎解き\上方謎の園BLACK\オルナシ企画\allornothing_black\src\stylus\page\_create_mission.styl */
 [class^="create_mission_"] .mission_card#cleared_words .mission_content {
   margin: 0 auto 1.5rem;
 }
 
-/* line 43 : C:\Users\daito\OneDrive\ドキュメント\謎解き\上方謎の園BLACK\オルナシ企画\allornothing_black\src\stylus\page\_create_mission.styl */
+/* line 44 : C:\Users\daito\OneDrive\ドキュメント\謎解き\上方謎の園BLACK\オルナシ企画\allornothing_black\src\stylus\page\_create_mission.styl */
 
 /* line 1 : C:\Users\daito\OneDrive\ドキュメント\謎解き\上方謎の園BLACK\オルナシ企画\allornothing_black\src\stylus\page\_select_mission.styl */
 
@@ -857,28 +854,28 @@ li {
   margin: 5rem 0;
 }
 
-/* line 10 : C:\Users\daito\OneDrive\ドキュメント\謎解き\上方謎の園BLACK\オルナシ企画\allornothing_black\src\stylus\page\_temp_missions.styl */
+/* line 11 : C:\Users\daito\OneDrive\ドキュメント\謎解き\上方謎の園BLACK\オルナシ企画\allornothing_black\src\stylus\page\_temp_missions.styl */
 .temp_missions button {
   margin: 2rem auto;
 }
 
-/* line 12 : C:\Users\daito\OneDrive\ドキュメント\謎解き\上方謎の園BLACK\オルナシ企画\allornothing_black\src\stylus\page\_temp_missions.styl */
+/* line 13 : C:\Users\daito\OneDrive\ドキュメント\謎解き\上方謎の園BLACK\オルナシ企画\allornothing_black\src\stylus\page\_temp_missions.styl */
 .temp_missions #remove {
   background-color: #e7302a;
 }
 
-/* line 14 : C:\Users\daito\OneDrive\ドキュメント\謎解き\上方謎の園BLACK\オルナシ企画\allornothing_black\src\stylus\page\_temp_missions.styl */
+/* line 15 : C:\Users\daito\OneDrive\ドキュメント\謎解き\上方謎の園BLACK\オルナシ企画\allornothing_black\src\stylus\page\_temp_missions.styl */
 .temp_missions #clear {
   background-color: #595757;
 }
 
-/* line 16 : C:\Users\daito\OneDrive\ドキュメント\謎解き\上方謎の園BLACK\オルナシ企画\allornothing_black\src\stylus\page\_temp_missions.styl */
+/* line 17 : C:\Users\daito\OneDrive\ドキュメント\謎解き\上方謎の園BLACK\オルナシ企画\allornothing_black\src\stylus\page\_temp_missions.styl */
 .temp_missions .back {
   background-color: #2984b2;
   display: block;
 }
 
-/* line 19 : C:\Users\daito\OneDrive\ドキュメント\謎解き\上方謎の園BLACK\オルナシ企画\allornothing_black\src\stylus\page\_temp_missions.styl */
+/* line 20 : C:\Users\daito\OneDrive\ドキュメント\謎解き\上方謎の園BLACK\オルナシ企画\allornothing_black\src\stylus\page\_temp_missions.styl */
 .temp_missions .content {
   margin-top: 10%;
   width: 70%;
