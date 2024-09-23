@@ -43,18 +43,27 @@
   </head>
   <body class="temp_missions">
     <div class="box box-filled box-lg f-lg">All or Nothing BLACK</div>
-    <div id="content">
-      <p id="temp_missions_title">作成済み文章一覧</p>
-      <div id="missionCard">
-        <div class="missionNo">1</div>
-        <div class="missioncontent">ミッション内容</div>
+    <div class="description">
+      <p class="content">仮作成文章一覧</p>
+    </div>
+    <div id="created_content_list">
+      <!-- ローカルストレージから仮作成文章情報を取得し、ループでmisson_cardを作成？-->
+      <div class="mission_card" onclick="showModal()">
+        <div class="mission_NO">1</div>
+        <div class="mission_content">ミッション内容</div>
+      </div>
+      <div class="mission_card" onclick="showModal()">
+        <div class="mission_NO">1</div>
+        <div class="mission_content">ミッション内容</div>
       </div>
     </div>
     <!-- 各種処理メニュー-->
     <div id="mask" hidden></div>
-    <button id="back" onclick="">文章取消</button>
-    <button id="clear" onclick="">クリア処理</button>
-    <button id="back" onclick="">戻る</button>
+    <div id="button_zone">
+      <button id="remove" onclick="showModal()">文章取消</button>
+      <button id="clear" onclick="showModal()">クリア処理</button>
+    </div>
+    <button id="back" onclick="closeModal()">戻る</button>
     <nav id="footer_btn">
       <ul>
         <li><a href="index.html"><img src="img/home.svg">
