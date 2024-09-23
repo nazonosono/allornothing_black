@@ -46,4 +46,15 @@ const storageUtil = {
   remove(key) {
     localStorage.removeItem(key);
   },
+
+  /**
+   * LocalStorageの配列データから要素を削除する
+   * @param {string} key
+   * @param {any} index - 削除したい要素のインデックス
+   */
+  removeArrayItem(key, index) {
+    const array = storageUtil.get(key);
+    array.splice(index, 1);
+    storageUtil.set(key, array);
+  },
 };

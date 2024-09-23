@@ -42,8 +42,8 @@ function tick() {
       const hiraIdx = Number(code.data);
       const hira = HIRAGANA[hiraIdx];
       if (hira) {
-        const modalHiraElm = document.getElementById(ID.MODAL_HIRAGANA);
-        modalHiraElm.textContent = hira
+        const obtainedHiraElm = document.getElementById(ID.OBTAINED_HIRAGANA);
+        obtainedHiraElm.textContent = hira
         showModal();
 
         // 検出された文字をアンロック済みとしてストレージに保存

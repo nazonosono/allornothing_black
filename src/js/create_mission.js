@@ -122,7 +122,6 @@ function createMission(missionId) {
  * クリア済み単語一覧を取得する
  */
 function getClearedWords() {
-  //TODO:リセット
   // クリア済み単語一覧を表示する親要素
   const clearedWordsElm = document.getElementById(ID.CLEARED_WORDS);
   // 当該ミッションID

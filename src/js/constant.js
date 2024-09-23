@@ -31,13 +31,13 @@ const ID = {
 
   // 仮作成一覧画面
   TEMP_MISSION_LIST: 'created_content_list',
-  // TODO: 消す
-  TEMP_MISSION_PREFIX: 'temp-mission-',
-  getTempMissionId: ((missionId, tempWordIdx) => `${STORAGE_KEYS.TEMP_MISSION_PREFIX}${missionId}-${tempWordIdx}`),
   NOW_MISSION_ID: 'now-mission-id',
   NOW_TEMP_WORD_IDX: 'now-temp-word-idx',
-  REMOVE_TEMP_MISSION_MODAL: 'remove_temp_modal',
-  TEMP_MISSION_CLEAR_MODAL: 'temp_clear_modal',
+  REMOVE_TEMP_MISSION_MODAL: 'remove_temp_mission_modal',
+  MISSION_CLEAR_MODAL: 'mission_clear_modal',
+
+  // カメラ画面
+  OBTAINED_HIRAGANA: 'obtained_hiragana'
 };
 
 const CLASS = {

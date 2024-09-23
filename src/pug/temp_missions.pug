@@ -18,8 +18,18 @@ block contents
   include mixin/_modalwindow
   +modalWindow("modal", "")
     div(id = "button_zone")
-      button(id = "remove", onclick = "showModal('remove_temp_modal')") 文章取消
-      button(id = "clear", onclick = "showModal('temp_clear_modal')") クリア処理
+      button(id = "remove", onclick = "removeTempMission()") 文章取消
+      button(id = "clear", onclick = "missionClear()") クリア処理
+
+  // 仮作成文章削除画面
+  +modalWindow("remove_temp_mission_modal")
+    p 仮作成した文章を<br>
+      | 削除しました！
+
+  // ミッションクリア画面
+  +modalWindow("mission_clear_modal")
+    p ミッションを<br>
+      | クリアしました！
 
   input(type="hidden", id="now-mission-id")
   input(type="hidden", id="now-temp-word-idx")

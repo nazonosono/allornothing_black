@@ -17,6 +17,11 @@ block contents
   include component/_footerBtn
 
   include mixin/_modalwindow
+  +modalWindow()
+    p
+      span#obtained_hiragana
+      | <br>
+      | を追加しました！
 
 block script
   script(src="https://cdn.jsdelivr.net/npm/jsqr@1.4.0/dist/jsQR.min.js")
