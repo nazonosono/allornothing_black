@@ -10,9 +10,11 @@ block contents
   include component/_title
   div(id = "content")
     p(id = "create_mission") 文字をタップして入力（最大30文字）
-  div(class = "mission_card")
-    li(class = "mission_NO") #{missionNo}
-    li(class = "mission_content") ミッション内容
+
+  //ミッションカード作成
+  include mixin/_mission_card
+  +mission_card("3", "check", "秋っぽい■■を受付に持ってくる")
+
   div(id = "error-message")
   div(id = "input-text")
   button(id = "delete-char", onclick = "deleteChar()" disabled) 取消

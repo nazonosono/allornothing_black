@@ -11,17 +11,27 @@ block contents
     p(class = "content") 問題番号をタップしてください
   // ミッション一覧
   div(id = "mission")
-    div(class = "mission_card")
-      a(href = "create_mission_1.html")
-        li(class = "mission_NO") 1
-        li(class = "mission_content") 同じ■■を持っている人
-    div(class = "mission_card")
-      a(href = "create_mission_2.html")
-        li(class = "mission_NO") 2
-        li(class = "mission_content") ■■色の靴を持っている人
-    div(class = "mission_card")
-      a(href = "create_mission_3.html")
-        li(class = "mission_NO") 3
-        li(class = "mission_content") ■■色の服を着ている人
+    //ミッションカード作成
+    include mixin/_mission_card
+    +mission_card("1", "camera", "自分と■■が同じ人を見つける")
+    +mission_card("2", "camera", "実物の黒い■■が写った写真を撮る")
+    +mission_card("3", "check", "秋っぽい■■を受付に持ってくる")
+    +mission_card("4", "camera", "今日■■を自分が食べた")
+    +mission_card("5", "camera", "今日■■に行ってきた")
+    +mission_card("6", "check", '今日プレイした"■■"のクリア画面を見せる')
+    +mission_card("7", "check", "受付で■■のものまねをする")
+    +mission_card("8", "check", '公演"■■"にまつわるグッズを受付に持ってくる')
+    +mission_card("9", "camera", '公演"■■"のキービジュアルを再現した写真を撮る')
+    +mission_card("10", "check", '受付で、"謎解き"と"■■"でなぞかけをする')
+    +mission_card("11", "check", "謎の園の■■について語った長文をXでポストする")
+    +mission_card("12", "check", "■■を100回する")
+    +mission_card("13", "camera", "謎の園会場にあるものを使って、答えが■■になるような謎を作る")
+    +mission_card("14", "check", "■■のアイテムミッションに挑戦して、クリアする")
+    +mission_card("15", "camera", "会場の入り口に貼ってある、■■が答えの小謎を解き明かす")
+    +mission_card("16", "camera", "今日■■を自分が食べた")
+    +mission_card("17", "camera", "今日■■を自分が食べた")
+    +mission_card("18", "camera", "今日■■を自分が食べた")
+    +mission_card("19", "camera", "今日■■を自分が食べた")
+    +mission_card("20", "camera", "今日■■を自分が食べた")
 
   include component/_footerBtn

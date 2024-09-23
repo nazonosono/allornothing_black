@@ -2,18 +2,18 @@ extends _layout
 
 block vars
   include _config
-  - var key = "create_mission_1"
+  - var key = "create_mission_20"
   - var page = pages[key]
 
 block contents
-  - var missionNo = 1
+  - var missionNo = 20
   include component/_title
   div(id = "content")
     p(id = "create_mission") 文字をタップして入力（最大30文字）
 
   //ミッションカード作成
   include mixin/_mission_card
-  +mission_card("1", "camera", "自分と■■が同じ人を見つける")
+  +mission_card("20", "camera", "今日◼を自分が食べた")
 
   div(id = "error-message")
   div(id = "input-text")

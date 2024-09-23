@@ -1,0 +1,7 @@
+mixin mission_card(m_id = "1", m_icon = "camera", m_content = "自分と■が同じ人を見つける")
+    div(class = "mission_card")
+        a(href = "create_mission_" + m_id + ".html")
+            li(class = "mission_NO") #{m_id}
+            li(class = "mission_icon")
+                img(src = imgPath + '/' + m_icon + '.svg')
+            li(class = "mission_content") #{m_content}
