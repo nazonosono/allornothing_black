@@ -1,6 +1,6 @@
-div(id = "modal", hidden)
-    div(id = "modal_window")
-        p(id = "modal_title") 【お知らせ】
-        p(id = "modal_contents_1")
-        p(id = "modal_contents_2") を追加しました！
-    button(class = "back", onclick = "closeModal()") 戻る
+mixin modalWindow(id = "modal", title = "【お知らせ】")
+    div(id = id, class = "modal", hidden)
+        div(class = "modal_window")
+            p(class = "modal_title") #{title}
+            block
+            button(class = "back", onclick = `closeModal("${id}")`) 戻る

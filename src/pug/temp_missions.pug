@@ -9,19 +9,20 @@ block contents
   include component/_title
   div(class = "description")
     p(class = "content") 仮作成文章一覧
+  // ローカルストレージから仮作成文章情報を取得
   div(id = "created_content_list")
-    // ローカルストレージから仮作成文章情報を取得し、ループでmisson_cardを作成？
-    div(class = "mission_card", onclick = "showModal()")
-      div(class = "mission_NO") 1
-      div(class = "mission_content") ミッション内容
-    div(class = "mission_card", onclick = "showModal()")
-      div(class = "mission_NO") 1
-      div(class = "mission_content") ミッション内容
-  // 各種処理メニュー
-  include component/_mask
-  div(id = "button_zone")
-    button(id = "remove", onclick = "showModal()") 文章取消
-    button(id = "clear", onclick = "showModal()") クリア処理
-  button(id = "back", onclick = "closeModal()") 戻る
 
   include component/_footerBtn
+
+  // 各種処理メニュー
+  include mixin/_modalwindow
+  +modalWindow("modal", "")
+    div(id = "button_zone")
+      button(id = "remove", onclick = "showModal('remove_temp_modal')") 文章取消
+      button(id = "clear", onclick = "showModal('temp_clear_modal')") クリア処理
+
+  input(type="hidden", id="now-mission-id")
+  input(type="hidden", id="now-temp-word-idx")
+
+block script
+  script(src=`${jsPath}/${key}.js`)

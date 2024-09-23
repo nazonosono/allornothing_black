@@ -42,28 +42,12 @@
     <meta name="twitter:image:alt" content="">
   </head>
   <body class="temp_missions">
-    <div class="box box-filled box-lg f-lg">All or Nothing BLACK</div>
+    <div class="box box-filled box-lg f-lg" id="app-title">All or Nothing BLACK</div>
     <div class="description">
       <p class="content">仮作成文章一覧</p>
     </div>
-    <div id="created_content_list">
-      <!-- ローカルストレージから仮作成文章情報を取得し、ループでmisson_cardを作成？-->
-      <div class="mission_card" onclick="showModal()">
-        <div class="mission_NO">1</div>
-        <div class="mission_content">ミッション内容</div>
-      </div>
-      <div class="mission_card" onclick="showModal()">
-        <div class="mission_NO">1</div>
-        <div class="mission_content">ミッション内容</div>
-      </div>
-    </div>
-    <!-- 各種処理メニュー-->
-    <div id="mask" hidden></div>
-    <div id="button_zone">
-      <button id="remove" onclick="showModal()">文章取消</button>
-      <button id="clear" onclick="showModal()">クリア処理</button>
-    </div>
-    <button id="back" onclick="closeModal()">戻る</button>
+    <!-- ローカルストレージから仮作成文章情報を取得-->
+    <div id="created_content_list"></div>
     <nav id="footer_btn">
       <ul>
         <li><a href="index.html"><img src="img/home.svg">
@@ -76,6 +60,20 @@
             <p>仮作成文章一覧</p></a></li>
       </ul>
     </nav>
+    <!-- 各種処理メニュー-->
+        <div class="modal" id="modal" hidden>
+          <div class="modal_window">
+            <p class="modal_title"></p>
+            <div id="button_zone">
+              <button id="remove" onclick="showModal('remove_temp_modal')">文章取消</button>
+              <button id="clear" onclick="showModal('temp_clear_modal')">クリア処理</button>
+            </div>
+            <button class="back" onclick="closeModal(&quot;modal&quot;)">戻る</button>
+          </div>
+        </div>
+    <input type="hidden" id="now-mission-id">
+    <input type="hidden" id="now-temp-word-idx">
     <script src="js/script.js"></script>
+    <script src="js/temp_missions.js"></script>
   </body>
 </html>

@@ -16,8 +16,6 @@ const ID = {
 
   // モーダル
   MODAL: 'modal',
-  MODAL_HIRAGANA: 'modal_contents_1',
-  MASK: 'mask',
 
   // ミッション作成画面
   INPUT_TEXT: 'input-text',
@@ -26,6 +24,20 @@ const ID = {
   SEMI_VOICED_MARK: 'semi-voiced-mark',
   TO_SMALL: 'to-small-hiragana',
   DELETE_CHAR: 'delete-char',
+  CREATE_MISSION_COMPLETED_MODAL: 'create_mission_completed_modal',
+  CREATE_TEMP_MISSION: 'make_contents',
+  CLEARED_WORDS: 'cleared_words',
+  MISSION_ID: 'mission_id',
+
+  // 仮作成一覧画面
+  TEMP_MISSION_LIST: 'created_content_list',
+  // TODO: 消す
+  TEMP_MISSION_PREFIX: 'temp-mission-',
+  getTempMissionId: ((missionId, tempWordIdx) => `${STORAGE_KEYS.TEMP_MISSION_PREFIX}${missionId}-${tempWordIdx}`),
+  NOW_MISSION_ID: 'now-mission-id',
+  NOW_TEMP_WORD_IDX: 'now-temp-word-idx',
+  REMOVE_TEMP_MISSION_MODAL: 'remove_temp_modal',
+  TEMP_MISSION_CLEAR_MODAL: 'temp_clear_modal',
 };
 
 const CLASS = {
@@ -63,3 +75,9 @@ const HIRAGANA_SMALL_TARGET = [
 const HIRAGANA_SMALL = [
   'ぁ', 'ぃ', 'ぅ', 'ぇ', 'ぉ', 'っ', 'ゃ', 'ゅ', 'ょ',
 ]
+
+const MISSION = {
+  1: (word) => `同じ${word}を持っている人`,
+  2: (word) => `${word}色の靴を持っている人`,
+  3: (word) => `${word}色の服を着ている人`,
+}

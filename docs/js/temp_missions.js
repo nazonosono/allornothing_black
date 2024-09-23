@@ -1,0 +1,2 @@
+function getTempMissions(){const n=document.getElementById(ID.TEMP_MISSION_LIST);for(let s=1;s<=MISSION_COUNT;s++){const e=storageUtil.get(STORAGE_KEYS.getTempWordKey(s));for(let i=0;i<e.length;i++)n.insertAdjacentHTML("beforeend",`\n        <div class="mission_card" onclick="showModal()">\n          <div class="mission_NO">${s}</div>\n          <div class="mission_content">${MISSION[s](e[i])}</div>\n        </div>\n        `)}}getTempMissions();
+//# sourceMappingURL=temp_missions.js.map

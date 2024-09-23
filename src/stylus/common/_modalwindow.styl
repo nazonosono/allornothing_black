@@ -1,11 +1,21 @@
-#modal
-    height 100%
+.modal
+    display none
+    justify-content center
+    align-items center
+    position absolute
+    top 0
+    left 0
+    z-index 10
     width 100%
-    text-align center
-    color c-white
-    display block
-    #modal_window
+    height 100%
+    background-color rgba(c-black, .9)
+    &:not([hidden])
+        display flex
+    .modal_window
         width 80%
-        height auto
+        text-align center
+        color c-white
         font-size 2rem
+        padding 2rem 0 3rem
         margin 0 auto
+        background-color black

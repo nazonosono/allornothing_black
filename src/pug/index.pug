@@ -13,9 +13,11 @@ block contents
   include component/_gozyuonhyo
 
   button(id = "howtoplay", onclick="showModal()") 遊び方
-  include component/_mask
 
   include component/_footerBtn
+
+  include mixin/_modalwindow
+  +modalWindow
 
 block script
   script(src=`${jsPath}/${key}.js`)

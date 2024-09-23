@@ -19,15 +19,13 @@ function initCard() {
 /**
  * モーダルを表示する
  */
-function showModal() {
-  document.getElementById(ID.MODAL).hidden = false;
-  document.getElementById(ID.MASK).hidden = false;
+function showModal(id = ID.MODAL) {
+  document.getElementById(id).hidden = false;
 }
 
 /**
  * モーダルを閉じる
  */
-function closeModal() {
-  document.getElementById(ID.MODAL).hidden = true;
-  document.getElementById(ID.MASK).hidden = true;
+function closeModal(id = ID.MODAL) {
+  document.getElementById(id).hidden = true;
 }

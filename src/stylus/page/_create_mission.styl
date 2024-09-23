@@ -1,34 +1,43 @@
-#content
-    text-align center
-    margin-top 3rem
+[class^="create_mission_"]
+    & #content
+        text-align center
+        margin-top 3rem
 
-#error-message
-    color c-red
-    width 80%
-    height 5rem
-    margin 0 auto
-    transform translate(0, 25%)
-    text-align center
-    font-size 4.5vw
-    font-weight bold
+    & #error-message
+        color c-red
+        width 80%
+        height 5rem
+        margin 0 auto
+        transform translate(0, 25%)
+        text-align center
+        font-size 4.5vw
+        font-weight bold
 
-#input-text
-    background-color c-white
-    color c-black
-    width 80%
-    height 8vh
-    margin 0 auto
-    font-size 4.8vw
-    font-weight bold
+    & #input-text
+        background-color c-white
+        color c-black
+        width 80%
+        height 8vh
+        margin 0 auto
+        font-size 4.8vw
+        font-weight bold
 
-#delete-char
-    margin 2rem auto 0 auto
-    display block
+    & #delete-char
+        margin 2rem auto 0 auto
+        display block
 
-#button_zone
-    & button
-        margin 2rem
-    & #cleared_list
-        background-color c-blue
-    & #make_contents
-        background-color c-black
+    & #button_zone
+        & button
+            margin 2rem
+        & #cleared_list
+            background-color c-blue
+        & #make_contents
+            background-color c-black
+            &:disabled
+                background-color c-gray
+    & .mission_card#cleared_words
+        margin 3rem 0
+        max-height 55vh;
+        overflow-y auto;
+        & .mission_content
+            margin 0 auto 1.5rem

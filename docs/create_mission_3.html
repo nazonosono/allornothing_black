@@ -42,7 +42,7 @@
     <meta name="twitter:image:alt" content="">
   </head>
   <body class="create_mission_3">
-    <div class="box box-filled box-lg f-lg">All or Nothing BLACK</div>
+    <div class="box box-filled box-lg f-lg" id="app-title">All or Nothing BLACK</div>
     <div id="content">
       <p id="create_mission">文字をタップして入力（最大30文字）</p>
     </div>
@@ -50,8 +50,8 @@
       <li class="mission_NO">3</li>
       <li class="mission_content">ミッション内容</li>
     </div>
-    <div id="error-message">テスト</div>
-    <div id="input-text">あいうえおかきくけこさしすせそたちつてとなにぬねのはひふへほ</div>
+    <div id="error-message"></div>
+    <div id="input-text"></div>
     <button id="delete-char" onclick="deleteChar()" disabled>取消</button>
     <!-- 五十音表作成-->
     <div id="charCardList">
@@ -241,25 +241,8 @@
       <button id="to-small-hiragana" onclick="toSmallHiragana()" disabled>小文字</button>
     </div>
     <div id="button_zone">
-      <button id="cleared_list" onclick="showModal()">クリア済一覧</button>
-      <button id="make_contents" onclick="createMission(3)">文章仮作成</button>
-    </div>
-    <!-- モーダルウィンドウ-->
-    <div id="mask" hidden></div>
-    <div id="modal" hidden>
-      <div id="modal_window">
-        <p id="modal_title">【お知らせ】</p>
-        <p id="modal_contents_1"></p>
-        <p id="modal_contents_2">を追加しました！</p>
-      </div>
-      <button class="back" onclick="closeModal()">戻る</button>
-    </div>
-    <!-- クリア済単語一覧-->
-    <div id="cleared_content">
-      <p id="cleared_words_title">クリア済単語一覧</p>
-      <div class="content_box">
-        <p>単語</p>
-      </div>
+      <button id="cleared_list" onclick="showModal('cleared_words_modal')">クリア済一覧</button>
+      <button id="make_contents" onclick="createMission(3)" disabled>文章仮作成</button>
     </div>
     <nav id="footer_btn">
       <ul>
@@ -273,6 +256,25 @@
             <p>仮作成文章一覧</p></a></li>
       </ul>
     </nav>
+    <!-- モーダルウィンドウ-->
+    <!-- クリア済単語一覧-->
+        <div class="modal" id="cleared_words_modal" hidden>
+          <div class="modal_window">
+            <p class="modal_title">クリア済単語一覧</p>
+            <div class="mission_card" id="cleared_words"></div>
+            <button class="back" onclick="closeModal(&quot;cleared_words_modal&quot;)">戻る</button>
+          </div>
+        </div>
+    <!-- 仮作成完了画面-->
+        <div class="modal" id="create_mission_completed_modal" hidden>
+          <div class="modal_window">
+            <p class="modal_title">【お知らせ】</p>
+            <p>
+              ミッション文を<br>仮作成しました！</p>
+            <button class="back" onclick="closeModal(&quot;create_mission_completed_modal&quot;)">戻る</button>
+          </div>
+        </div>
+    <input type="hidden" id="mission_id" value="3">
     <script src="js/script.js"></script>
     <script src="js/create_mission.js"></script>
   </body>

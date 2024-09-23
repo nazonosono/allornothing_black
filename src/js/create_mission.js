@@ -2,6 +2,7 @@ const MAX_INPUT_TEXT_LENGTH = 30;
 const createErrorMessage = (wordState) => `すでに${wordState}の単語です`;
 
 initCard();
+getClearedWords();
 
 /**
  * 押下された文字を入力する
@@ -75,6 +76,8 @@ function deleteChar() {
 function toggleButtonState(inputChar) {
   // 入力文字があれば取消ボタンを活性に、そうでなければ非活性に
   document.getElementById(ID.DELETE_CHAR).disabled = inputChar ? false : true;
+  // 入力文字があれば文章仮作成ボタンを活性に、そうでなければ非活性に
+  document.getElementById(ID.CREATE_TEMP_MISSION).disabled = inputChar ? false : true;
   // 濁音付与対象であれば濁音ボタンを活性に、そうでなければ非活性に
   document.getElementById(ID.VOICED_MARK).disabled = HIRAGANA_VOICED_TARGET.includes(inputChar) ? false : true;
   // 半濁音付与対象であれば半濁音ボタンを活性に、そうでなければ非活性に
@@ -111,5 +114,25 @@ function createMission(missionId) {
   // ストレージに当該ミッションの仮作成単語を追加する
   storageUtil.add(STORAGE_KEYS.getTempWordKey(missionId), inputText);
 
-  // TODO: クリアメッセージをダイアログ表示する
+  // クリアメッセージをダイアログ表示する
+  showModal(ID.CREATE_MISSION_COMPLETED_MODAL);
+}
+
+/**
+ * クリア済み単語一覧を取得する
+ */
+function getClearedWords() {
+  //TODO:リセット
+  // クリア済み単語一覧を表示する親要素
+  const clearedWordsElm = document.getElementById(ID.CLEARED_WORDS);
+  // 当該ミッションID
+  const missionId = Number(document.getElementById(ID.MISSION_ID).value);
+  // ストレージから当該ミッションのクリア済単語を取得
+  const clearedWordArray = storageUtil.get(STORAGE_KEYS.getClearedWordKey(missionId));
+  for (const clearedWord of clearedWordArray) {
+    // 親要素の内側の末尾に追加
+    clearedWordsElm.insertAdjacentHTML('beforeend', `
+      <p class="mission_content">${clearedWord}</p>
+    `);
+  }
 }

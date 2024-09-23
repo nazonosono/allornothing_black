@@ -42,7 +42,7 @@
     <meta name="twitter:image:alt" content="">
   </head>
   <body class="top">
-    <div class="box box-filled box-lg f-lg">All or Nothing BLACK</div>
+    <div class="box box-filled box-lg f-lg" id="app-title">All or Nothing BLACK</div>
     <div class="description">
       <p class="content">現在の文字</p>
     </div>
@@ -228,7 +228,6 @@
       </ul>
     </div>
     <button id="howtoplay" onclick="showModal()">遊び方</button>
-    <div id="mask" hidden></div>
     <nav id="footer_btn">
       <ul>
         <li><a href="index.html"><img src="img/home.svg">
@@ -241,6 +240,12 @@
             <p>仮作成文章一覧</p></a></li>
       </ul>
     </nav>
+        <div class="modal" id="modal" hidden>
+          <div class="modal_window">
+            <p class="modal_title">【お知らせ】</p>
+            <button class="back" onclick="closeModal(&quot;modal&quot;)">戻る</button>
+          </div>
+        </div>
     <script src="js/script.js"></script>
     <script src="js/top.js"></script>
   </body>
