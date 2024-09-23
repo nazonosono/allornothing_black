@@ -116,6 +116,8 @@ function createMission(missionId) {
 
   // クリアメッセージをダイアログ表示する
   showModal(ID.CREATE_MISSION_COMPLETED_MODAL);
+  // 入力欄クリア
+  inputTextElm.textContent = '';
 }
 
 /**
