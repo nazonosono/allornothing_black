@@ -1,4 +1,4 @@
-const MISSION_COUNT = 3;
+const MISSION_COUNT = 20;
 
 const STORAGE_KEYS = {
   VISITED: 'visited',
