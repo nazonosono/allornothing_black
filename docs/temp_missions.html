@@ -41,9 +41,9 @@
   <body class="temp_missions">
     <div class="box box-filled box-lg f-lg" id="app-title">All or Nothing BLACK</div>
     <div class="description">
-      <p class="content">仮作成文章をタップしてください</p>
+      <p class="content">作成ミッションをタップ</p>
     </div>
-    <!-- ローカルストレージから仮作成文章情報を取得-->
+    <!-- ローカルストレージから作成ミッション情報を取得-->
     <div id="created_content_list"></div>
     <nav id="footer_btn">
       <ul>
@@ -52,9 +52,9 @@
         <li><a href="camera.html"><img src="img/camera.svg">
             <p>カメラ</p></a></li>
         <li><a href="select_mission.html"><img src="img/mission.svg">
-            <p>ミッション一覧</p></a></li>
+            <p>ブラックミッション</p></a></li>
         <li><a href="temp_missions.html"><img src="img/contents.svg">
-            <p>仮作成文章一覧</p></a></li>
+            <p>作成ミッション</p></a></li>
       </ul>
     </nav>
     <!-- 各種処理メニュー-->
@@ -68,12 +68,12 @@
             <button class="back" onclick="closeModal(&quot;modal&quot;)">戻る</button>
           </div>
         </div>
-    <!-- 仮作成文章削除画面-->
+    <!-- 作成ミッション削除画面-->
         <div class="modal" id="remove_temp_mission_modal" hidden>
           <div class="modal_window">
             <p class="modal_title">【お知らせ】</p>
             <p>
-              仮作成した文章を<br>削除しました！</p>
+              作成ミッションを<br>削除しました！</p>
             <button class="back" onclick="closeModal(&quot;remove_temp_mission_modal&quot;)">戻る</button>
           </div>
         </div>
