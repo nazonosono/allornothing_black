@@ -79,7 +79,7 @@ button {
 .content {
   margin-right: auto;
   margin-left: auto;
-  margin-top: 20%;
+  margin-top: 15%;
   width: 30%;
   padding: 1rem 0;
   background-color: #231815;
@@ -742,7 +742,7 @@ li {
 
 /* line 5 : C:\Users\daito\OneDrive\ドキュメント\謎解き\上方謎の園BLACK\オルナシ企画\allornothing_black\src\stylus\page\_camera.styl */
 .camera #canvas {
-  max-width: 70%;
+  max-width: 75%;
   height: auto;
   margin-top: 5%;
   border: #231815 2px solid;
