@@ -10,6 +10,8 @@
     <meta name="theme-color" content="#000000">
     <meta name="theme-color" media="(prefers-color-scheme: light)" content="#000000">
     <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000000">
+    <!-- 検索結果に表示しない-->
+    <meta name="robots" content="noindex">
     <!-- style.css-->
     <link rel="stylesheet" href="css/style.css"><link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -46,8 +48,8 @@
     <!--ミッションカード作成-->
         <div class="mission_card"><a href="create_mission_11.html">
             <li class="mission_NO">11</li>
-            <li class="mission_icon"><img src="img/check.svg"></li>
-            <li class="mission_content">謎の園の■■について語った長文をXでポストする</li></a></div>
+            <li class="mission_icon"><img src="img/camera.svg"></li>
+            <li class="mission_content">公演&quot;■■&quot;のキービジュアルを再現した写真を撮る</li></a></div>
     <div id="error-message"></div>
     <div id="input-text"></div>
     <button id="delete-char" onclick="deleteChar()" disabled>取消</button>
@@ -240,7 +242,7 @@
     </div>
     <div id="button_zone">
       <button id="cleared_list" onclick="showModal('cleared_words_modal')">クリア済一覧</button>
-      <button id="make_contents" onclick="createMission(11)" disabled>文章仮作成</button>
+      <button id="make_contents" onclick="createMission(11)" disabled>作成</button>
     </div>
     <nav id="footer_btn">
       <ul>
@@ -249,9 +251,9 @@
         <li><a href="camera.html"><img src="img/camera.svg">
             <p>カメラ</p></a></li>
         <li><a href="select_mission.html"><img src="img/mission.svg">
-            <p>ミッション一覧</p></a></li>
+            <p>ブラックミッション</p></a></li>
         <li><a href="temp_missions.html"><img src="img/contents.svg">
-            <p>仮作成文章一覧</p></a></li>
+            <p>作成ミッション</p></a></li>
       </ul>
     </nav>
     <!-- モーダルウィンドウ-->
@@ -263,12 +265,12 @@
             <button class="back" onclick="closeModal(&quot;cleared_words_modal&quot;)">戻る</button>
           </div>
         </div>
-    <!-- 仮作成完了画面-->
+    <!-- ミッション作成完了画面-->
         <div class="modal" id="create_mission_completed_modal" hidden>
           <div class="modal_window">
             <p class="modal_title">【お知らせ】</p>
             <p>
-              ミッション文を<br>仮作成しました！</p>
+              ミッションを<br>作成しました！</p>
             <button class="back" onclick="closeModal(&quot;create_mission_completed_modal&quot;)">戻る</button>
           </div>
         </div>

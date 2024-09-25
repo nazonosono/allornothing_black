@@ -13,7 +13,7 @@ block contents
 
   //ミッションカード作成
   include mixin/_mission_card
-  +mission_card("11", "check", "謎の園の■■について語った長文をXでポストする")
+  +mission_card("11", "camera", '公演"■■"のキービジュアルを再現した写真を撮る')
 
   div(id = "error-message")
   div(id = "input-text")
@@ -23,7 +23,7 @@ block contents
 
   div(id = "button_zone")
     button(id = "cleared_list", onclick = "showModal('cleared_words_modal')") クリア済一覧
-    button(id = "make_contents", onclick = `createMission(${missionNo})` disabled) 文章仮作成
+    button(id = "make_contents", onclick = `createMission(${missionNo})` disabled) 作成
 
 
   include component/_footerBtn
@@ -35,10 +35,10 @@ block contents
   +modalWindow("cleared_words_modal", "クリア済単語一覧")
     div(id = "cleared_words" class = "mission_card")
 
-  // 仮作成完了画面
+  // ミッション作成完了画面
   +modalWindow("create_mission_completed_modal")
-    p ミッション文を<br>
-      | 仮作成しました！
+    p ミッションを<br>
+      | 作成しました！
 
   input(type="hidden", id="mission_id", value=`${missionNo}`)
 
