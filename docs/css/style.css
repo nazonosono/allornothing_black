@@ -674,7 +674,7 @@ li {
 /* line 16 : C:\Users\daito\OneDrive\ドキュメント\謎解き\上方謎の園BLACK\オルナシ企画\allornothing_black\src\stylus\common\_mission_card.styl */
 .mission_card .mission_icon {
   position: absolute;
-  background-color: #2984b2;
+  background-color: #231815;
   width: 8%;
   height: auto;
   padding: 0.5% 0;
@@ -691,6 +691,44 @@ li {
 }
 
 /* line 30 : C:\Users\daito\OneDrive\ドキュメント\謎解き\上方謎の園BLACK\オルナシ企画\allornothing_black\src\stylus\common\_mission_card.styl */
+.mission_card .mission_icon2 {
+  position: absolute;
+  background-color: #231815;
+  width: 8%;
+  height: auto;
+  padding: 0.5% 0;
+  font-weight: 800;
+  font-size: 1.8rem;
+  text-align: center;
+  left: 18%;
+  bottom: 100%;
+}
+
+/* line 41 : C:\Users\daito\OneDrive\ドキュメント\謎解き\上方謎の園BLACK\オルナシ企画\allornothing_black\src\stylus\common\_mission_card.styl */
+.mission_card .mission_icon2 img {
+  width: 50%;
+}
+
+/* line 44 : C:\Users\daito\OneDrive\ドキュメント\謎解き\上方謎の園BLACK\オルナシ企画\allornothing_black\src\stylus\common\_mission_card.styl */
+.mission_card .mission_icon3 {
+  position: absolute;
+  background-color: #231815;
+  width: 8%;
+  height: auto;
+  padding: 0.5% 0;
+  font-weight: 800;
+  font-size: 1.8rem;
+  text-align: center;
+  left: 26%;
+  bottom: 100%;
+}
+
+/* line 55 : C:\Users\daito\OneDrive\ドキュメント\謎解き\上方謎の園BLACK\オルナシ企画\allornothing_black\src\stylus\common\_mission_card.styl */
+.mission_card .mission_icon3 img {
+  width: 50%;
+}
+
+/* line 58 : C:\Users\daito\OneDrive\ドキュメント\謎解き\上方謎の園BLACK\オルナシ企画\allornothing_black\src\stylus\common\_mission_card.styl */
 .mission_card .mission_content {
   background-color: #fff;
   color: #231815;
@@ -704,7 +742,7 @@ li {
   letter-spacing: 0.05rem;
 }
 
-/* line 40 : C:\Users\daito\OneDrive\ドキュメント\謎解き\上方謎の園BLACK\オルナシ企画\allornothing_black\src\stylus\common\_mission_card.styl */
+/* line 68 : C:\Users\daito\OneDrive\ドキュメント\謎解き\上方謎の園BLACK\オルナシ企画\allornothing_black\src\stylus\common\_mission_card.styl */
 
 /* line 1 : C:\Users\daito\OneDrive\ドキュメント\謎解き\上方謎の園BLACK\オルナシ企画\allornothing_black\src\stylus\common\_title.styl */
 

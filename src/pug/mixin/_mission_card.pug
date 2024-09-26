@@ -2,6 +2,15 @@ mixin mission_card(m_id = "1", m_icon = "camera", m_content = "自分と■が�
     div(class = "mission_card")
         a(href = "create_mission_" + m_id + ".html")
             li(class = "mission_NO") #{m_id}
-            li(class = "mission_icon")
-                img(src = imgPath + '/' + m_icon + '.svg')
+            if m_icon == "camera"
+                li(class = "mission_icon")
+                    img(src = imgPath + '/camera.svg')
+            else if m_icon == "check"
+                li(class = "mission_icon")
+                    img(src = imgPath + '/check.svg')
+            else if m_icon == "check&camera"
+                li(class = "mission_icon2")
+                    img(src = imgPath + '/check.svg')
+                li(class = "mission_icon3")
+                    img(src = imgPath + '/camera.svg')
             li(class = "mission_content") #{m_content}
