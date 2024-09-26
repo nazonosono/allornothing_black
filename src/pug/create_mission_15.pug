@@ -17,13 +17,13 @@ block contents
 
   div(id = "error-message")
   div(id = "input-text")
-  button(id = "delete-char", onclick = "deleteChar()" disabled) 取消
+  button(id = "make_contents", onclick = `createMission(${missionNo})` disabled) 作成
 
   include component/_gozyuonhyo
 
   div(id = "button_zone")
     button(id = "cleared_list", onclick = "showModal('cleared_words_modal')") クリア済一覧
-    button(id = "make_contents", onclick = `createMission(${missionNo})` disabled) 作成
+    button(id = "delete-char", onclick = "deleteChar()" disabled) 1文字取消
 
 
   include component/_footerBtn

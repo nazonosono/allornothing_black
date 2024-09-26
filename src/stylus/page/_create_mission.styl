@@ -23,9 +23,12 @@
         font-size 4.8vw
         font-weight bold
 
-    & #delete-char
-        margin 2rem auto 0 auto
+    & #make_contents
+        background-color c-black
         display block
+        margin 2rem auto 0 auto
+        &:disabled
+            background-color c-gray
 
     & #button_zone
         margin-bottom 20%
@@ -33,10 +36,8 @@
             margin 2rem
         & #cleared_list
             background-color c-blue
-        & #make_contents
-            background-color c-black
-            &:disabled
-                background-color c-gray
+        & #delete-char
+            background-color c-red
 
     & .mission_card#cleared_words
         margin 3rem 0
