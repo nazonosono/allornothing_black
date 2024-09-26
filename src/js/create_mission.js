@@ -100,7 +100,7 @@ function createMission(missionId) {
   const clearedWordArray = storageUtil.get(STORAGE_KEYS.getClearedWordKey(missionId));
   let errorMessage = '';
   if (tempWordArray.includes(inputText)) {
-    errorMessage = createErrorMessage('仮作成済');
+    errorMessage = createErrorMessage('作成済');
   } else if (clearedWordArray.includes(inputText)) {
     errorMessage = createErrorMessage('クリア済');
   }
