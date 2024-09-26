@@ -35,6 +35,7 @@ const ID = {
   NOW_TEMP_WORD_IDX: 'now-temp-word-idx',
   REMOVE_TEMP_MISSION_MODAL: 'remove_temp_mission_modal',
   MISSION_CLEAR_MODAL: 'mission_clear_modal',
+  CONFIRM_CLEAR_MODAL: 'confirm_clear_modal',
 
   // カメラ画面
   OBTAINED_HIRAGANA: 'obtained_hiragana'

@@ -885,22 +885,27 @@ li {
 }
 
 /* line 14 : C:\00_Develop\allornothing_black\src\stylus\page\_temp_missions.styl */
-.temp_missions #remove {
+.temp_missions #remove_btn {
   background-color: #e7302a;
 }
 
 /* line 16 : C:\00_Develop\allornothing_black\src\stylus\page\_temp_missions.styl */
-.temp_missions #clear {
+.temp_missions #clear_btn {
   background-color: #595757;
 }
 
 /* line 18 : C:\00_Develop\allornothing_black\src\stylus\page\_temp_missions.styl */
+.temp_missions #cancel_btn {
+  background-color: #595757;
+}
+
+/* line 20 : C:\00_Develop\allornothing_black\src\stylus\page\_temp_missions.styl */
 .temp_missions .back {
   background-color: #2984b2;
   display: block;
 }
 
-/* line 21 : C:\00_Develop\allornothing_black\src\stylus\page\_temp_missions.styl */
+/* line 23 : C:\00_Develop\allornothing_black\src\stylus\page\_temp_missions.styl */
 .temp_missions .content {
   margin-top: 10%;
   width: 70%;

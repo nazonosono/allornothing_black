@@ -64,8 +64,8 @@
           <div class="modal_window">
             <p class="modal_title"></p>
             <div id="button_zone">
-              <button id="remove" onclick="removeTempMission()">文章取消</button>
-              <button id="clear" onclick="missionClear()">クリア処理</button>
+              <button id="remove_btn" onclick="removeTempMission()">文章取消</button>
+              <button id="clear_btn" onclick="missionClear()">クリア処理</button>
             </div>
             <button class="back" onclick="closeModal(&quot;modal&quot;)">戻る</button>
           </div>
@@ -77,6 +77,18 @@
             <p>
               作成ミッションを<br>削除しました！</p>
             <button class="back" onclick="closeModal(&quot;remove_temp_mission_modal&quot;)">戻る</button>
+          </div>
+        </div>
+    <!-- クリア確認画面-->
+        <div class="modal" id="confirm_clear_modal" hidden>
+          <div class="modal_window">
+            <p class="modal_title"></p>
+            <p>クリア処理を実行しますか？</p>
+            <div id="button_zone">
+              <button id="cancel_btn" onclick="cancelClear()">いいえ</button>
+              <button id="confirm_btn" onclick="confirmClear()">はい</button>
+            </div>
+            <button class="back" onclick="closeModal(&quot;confirm_clear_modal&quot;)">戻る</button>
           </div>
         </div>
     <!-- ミッションクリア画面-->

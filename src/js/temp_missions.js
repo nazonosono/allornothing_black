@@ -57,6 +57,16 @@ function removeTempMission() {
  * ミッションクリア処理
  */
 function missionClear() {
+  // ミッションクリア確認モーダル表示
+  showModal(ID.CONFIRM_CLEAR_MODAL);
+  // 処理メニューモーダルを閉じる
+  closeModal();
+}
+
+/**
+ * ミッションクリア実行
+ */
+function confirmClear() {
   const nowMissionId = Number(document.getElementById(ID.NOW_MISSION_ID).value);
   const nowTempWordIdx = Number(document.getElementById(ID.NOW_TEMP_WORD_IDX).value);
   // ストレージから当該仮作成単語を取得する
@@ -69,6 +79,16 @@ function missionClear() {
   getTempMissions();
   // ミッションクリアモーダル表示
   showModal(ID.MISSION_CLEAR_MODAL);
-  // 処理メニューモーダルを閉じる
-  closeModal();
+  // ミッションクリア確認モーダルを閉じる
+  closeModal(ID.CONFIRM_CLEAR_MODAL);
+}
+
+/**
+ * ミッションクリアキャンセル
+ */
+function cancelClear() {
+  // ミッションクリア確認モーダルを閉じる
+  closeModal(ID.CONFIRM_CLEAR_MODAL);
+  // 処理メニューモーダル表示
+  showModal();
 }

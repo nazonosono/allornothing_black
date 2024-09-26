@@ -14,17 +14,25 @@ block contents
 
   include component/_footerBtn
 
-  // 各種処理メニュー
   include mixin/_modalwindow
+
+  // 各種処理メニュー
   +modalWindow("modal", "")
     div(id = "button_zone")
-      button(id = "remove", onclick = "removeTempMission()") 文章取消
-      button(id = "clear", onclick = "missionClear()") クリア処理
+      button(id = "remove_btn", onclick = "removeTempMission()") 文章取消
+      button(id = "clear_btn", onclick = "missionClear()") クリア処理
 
   // 作成ミッション削除画面
   +modalWindow("remove_temp_mission_modal")
     p 作成ミッションを<br>
       | 削除しました！
+
+  // クリア確認画面
+  +modalWindow("confirm_clear_modal", "")
+    p クリア処理を実行しますか？
+    div(id = "button_zone")
+      button(id = "cancel_btn", onclick = "cancelClear()") いいえ
+      button(id = "confirm_btn", onclick = "confirmClear()") はい
 
   // ミッションクリア画面
   +modalWindow("mission_clear_modal")
