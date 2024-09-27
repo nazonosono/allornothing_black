@@ -16,8 +16,9 @@ function getTempMissions() {
       // 親要素の内側の末尾に追加
       tempMissionListElm.insertAdjacentHTML('beforeend', `
         <div class="mission_card" onclick="showTempMissionMenu(${missionId}, ${idx})">
-          <div class="mission_NO">${missionId}</div>
-          <div class="mission_content">${MISSION[missionId](tempWords[idx])}</div>
+          <li class="mission_NO">${missionId}</li>
+          ${getMissionIconHtml(missionId)}
+          <li class="mission_content">${MISSION[missionId].text(tempWords[idx])}</li>
         </div>
         `);
     }
@@ -91,4 +92,29 @@ function cancelClear() {
   closeModal(ID.CONFIRM_CLEAR_MODAL);
   // 処理メニューモーダル表示
   showModal();
+}
+
+/**
+ * ミッションのアイコンを表示するHTMLを取得
+ * @param {number} missionId - ミッションID
+ */
+function getMissionIconHtml(missionId) {
+  const missionIcon = MISSION[missionId].icon;
+  switch (missionIcon) {
+    case MISSION_ICON.CAMERA:
+      return `<li class = "mission_icon">
+                <img src = "${IMG_PATH}/camera.svg">
+              </li>`;
+    case MISSION_ICON.CHECK:
+      return `<li class = "mission_icon">
+                <img src = "${IMG_PATH}/check.svg">
+              </li>`;
+    case MISSION_ICON.CHECK_CAMERA:
+      return `<li class = "mission_icon2">
+                <img src = "${IMG_PATH}/check.svg">
+              </li>
+              <li class = "mission_icon3">
+                <img src = "${IMG_PATH}/camera.svg">
+              </li>`;
+  }
 }

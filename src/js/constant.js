@@ -1,5 +1,7 @@
 const MISSION_COUNT = 20;
 
+const IMG_PATH = 'img';
+
 const STORAGE_KEYS = {
   VISITED: 'visited',
   UNLOCKED: 'unlocked',
@@ -41,9 +43,6 @@ const ID = {
   OBTAINED_HIRAGANA: 'obtained_hiragana'
 };
 
-const CLASS = {
-};
-
 const HIRAGANA = [
   'あ', 'い', 'う', 'え', 'お', 'か', 'き', 'く', 'け', 'こ',
   'さ', 'し', 'す', 'せ', 'そ', 'た', 'ち', 'つ', 'て', 'と',
@@ -77,25 +76,91 @@ const HIRAGANA_SMALL = [
   'ぁ', 'ぃ', 'ぅ', 'ぇ', 'ぉ', 'っ', 'ゃ', 'ゅ', 'ょ',
 ]
 
+const MISSION_ICON = Object.freeze({
+  CAMERA: 'camera',
+  CHECK: 'check',
+  CHECK_CAMERA: 'check&camera',
+});
+
 const MISSION = {
-  1: (word) => `実物の黒い${word}が写った写真を撮る`,
-  2: (word) => `自分と${word}が同じ人を見つける`,
-  3: (word) => `今日${word}を自分が食べた`,
-  4: (word) => `今日${word}に行ってきた`,
-  5: (word) => `今日プレイした"${word}"のクリア画面を見せる`,
-  6: (word) => `死ぬ気で${word}する`,
-  7: (word) => `${word}みたいに「ぶらっく」と言う`,
-  8: (word) => `${word}に対する愛をアピールする`,
-  9: (word) => `${word}についての上手いウソ雑学を言う`,
-  10: (word) => `公演"${word}"にまつわるグッズを受付に持ってくる`,
-  11: (word) => `公演"${word}"のキービジュアルを再現した写真を撮る`,
-  12: (word) => `謎の園会場にあるものを使って、答えが${word}になるような謎を作る`,
-  13: (word) => `受付で、"謎解き"と"${word}"でなぞかけをする`,
-  14: (word) => `謎の園の${word}について語った長文をXでポストする`,
-  15: (word) => `${word}を謎の園にいるスタッフにあげる`,
-  16: (word) => `10人以上で${word}する`,
-  17: (word) => `受付横で、${word}を100回する`,
-  18: (word) => `受付横で、1分間${word}する`,
-  19: (word) => `会場の入り口に貼ってある、${word}が答えの小謎を解き明かす`,
-  20: (word) => `${word}のアイテムミッションに挑戦して、クリアする`,
+  1: {
+    text: (word) => `実物の黒い${word}が写った写真を撮る`,
+    icon: MISSION_ICON.CAMERA,
+  },
+  2: {
+    text: (word) => `自分と${word}が同じ人を見つける`,
+    icon: MISSION_ICON.CAMERA,
+  },
+  3: {
+    text: (word) => `今日${word}を自分が食べた`,
+    icon: MISSION_ICON.CAMERA,
+  },
+  4: {
+    text: (word) => `今日${word}に行ってきた`,
+    icon: MISSION_ICON.CAMERA,
+  },
+  5: {
+    text: (word) => `今日プレイした"${word}"のクリア画面を見せる`,
+    icon: MISSION_ICON.CHECK_CAMERA,
+  },
+  6: {
+    text: (word) => `死ぬ気で${word}する`,
+    icon: MISSION_ICON.CHECK_CAMERA,
+  },
+  7: {
+    text: (word) => `${word}みたいに「ぶらっく」と言う`,
+    icon: MISSION_ICON.CHECK_CAMERA,
+  },
+  8: {
+    text: (word) => `${word}に対する愛をアピールする`,
+    icon: MISSION_ICON.CHECK_CAMERA,
+  },
+  9: {
+    text: (word) => `${word}についての上手いウソ雑学を言う`,
+    icon: MISSION_ICON.CHECK,
+  },
+  10: {
+    text: (word) => `公演"${word}"にまつわるグッズを受付に持ってくる`,
+    icon: MISSION_ICON.CHECK,
+  },
+  11: {
+    text: (word) => `公演"${word}"のキービジュアルを再現した写真を撮る`,
+    icon: MISSION_ICON.CAMERA,
+  },
+  12: {
+    text: (word) => `謎の園会場にあるものを使って、答えが${word}になるような謎を作る`,
+    icon: MISSION_ICON.CAMERA,
+  },
+  13: {
+    text: (word) => `受付で、"謎解き"と"${word}"でなぞかけをする`,
+    icon: MISSION_ICON.CHECK,
+  },
+  14: {
+    text: (word) => `謎の園の${word}について語った長文をXでポストする`,
+    icon: MISSION_ICON.CHECK_CAMERA,
+  },
+  15: {
+    text: (word) => `${word}を謎の園にいるスタッフにあげる`,
+    icon: MISSION_ICON.CHECK_CAMERA,
+  },
+  16: {
+    text: (word) => `10人以上で${word}する`,
+    icon: MISSION_ICON.CHECK_CAMERA,
+  },
+  17: {
+    text: (word) => `受付横で、${word}を100回する`,
+    icon: MISSION_ICON.CHECK,
+  },
+  18: {
+    text: (word) => `受付横で、1分間${word}する`,
+    icon: MISSION_ICON.CHECK,
+  },
+  19: {
+    text: (word) => `会場の入り口に貼ってある、${word}が答えの小謎を解き明かす`,
+    icon: MISSION_ICON.CHECK,
+  },
+  20: {
+    text: (word) => `${word}のアイテムミッションに挑戦して、クリアする`,
+    icon: MISSION_ICON.CHECK,
+  },
 }
